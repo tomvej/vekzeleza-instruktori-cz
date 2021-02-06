@@ -1,0 +1,36 @@
+{
+  "name": "tvrz-2021",
+  "private": true,
+  "description": "Web page for Tvrz 2021.",
+  "version": "0.1.0",
+  "author": "Tomáš Vejpustek <tom.vejpustek@centrum.cz>",
+  "dependencies": {
+    "gatsby": "2.32.3",
+    "gatsby-image": "2.11.0",
+    "gatsby-plugin-manifest": "2.12.0",
+    "gatsby-plugin-react-helmet": "3.10.0",
+    "gatsby-plugin-sharp": "2.14.1",
+    "gatsby-source-filesystem": "2.11.0",
+    "gatsby-transformer-sharp": "2.12.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-helmet": "6.1.0"
+  },
+  "devDependencies": {
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "yarn develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomvej/tvrz2021"
+  }
+}
