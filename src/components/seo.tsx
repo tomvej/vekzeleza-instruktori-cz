@@ -17,9 +17,9 @@ interface Props {
 }
 
 const SEO: FC<Props> = ({description = '', lang = 'en', meta = [], title}) => {
-    const {site} = useStaticQuery(
+    const {site} = useStaticQuery<GatsbyTypes.SiteMetaQueryQuery>(
         graphql`
-            query {
+            query SiteMetaQuery {
                 site {
                     siteMetadata {
                         title
@@ -31,8 +31,8 @@ const SEO: FC<Props> = ({description = '', lang = 'en', meta = [], title}) => {
         `,
     );
 
-    const metaDescription = description || site.siteMetadata.description;
-    const defaultTitle = site.siteMetadata?.title;
+    const metaDescription = description || site?.siteMetadata?.description;
+    const defaultTitle = site?.siteMetadata?.title;
 
     return (
         <Helmet
@@ -64,7 +64,7 @@ const SEO: FC<Props> = ({description = '', lang = 'en', meta = [], title}) => {
                 },
                 {
                     name: `twitter:creator`,
-                    content: site.siteMetadata?.author || ``,
+                    content: site?.siteMetadata?.author || ``,
                 },
                 {
                     name: `twitter:title`,
