@@ -6,19 +6,20 @@
  */
 
 import { useStaticQuery, graphql } from 'gatsby';
+import { FC } from 'react';
 
 import Header from './header';
 import './layout.css';
 
-const Layout = ({ children }) => {
+const Layout: FC = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
+      query SiteTitleQuery {
+          site {
+              siteMetadata {
+                  title
+              }
+          }
       }
-    }
   `);
 
   return (
@@ -43,7 +44,7 @@ const Layout = ({ children }) => {
         </footer>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
