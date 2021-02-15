@@ -1,0 +1,49 @@
+/*
+    Breakpoints:
+    small   40em
+    medium  64em
+    large   75em
+    xlarge  90em
+ */
+
+@mixin sm {
+    @media screen and (max-width: 39.9375rem) {
+        @content
+    }
+}
+
+@mixin md {
+    @media screen and (max-width: 63.9375rem) {
+        @content
+    }
+}
+
+@mixin md-only {
+    @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
+        @content
+    }
+}
+
+@mixin lg {
+    @media screen and (max-width: 75.9375rem) {
+        @content
+    }
+}
+
+@mixin lg-only {
+    @media screen and (min-width: 64rem) and (max-width: 75.9375rem) {
+        @content
+    }
+}
+
+@mixin ie-only {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        @content
+    }
+}
+
+@mixin edge-only {
+    @supports (-ms-ime-align:auto) {
+        @content
+    }
+}

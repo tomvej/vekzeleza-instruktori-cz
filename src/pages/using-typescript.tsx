@@ -1,7 +1,7 @@
-import {PageProps, Link, graphql} from 'gatsby';
+import {graphql, Link, PageProps} from 'gatsby';
 import {FC} from 'react';
 
-import Layout from '../components/layout';
+import {ResponsiveContainer} from '../components';
 import SEO from '../components/seo';
 
 interface DataProps {
@@ -11,7 +11,7 @@ interface DataProps {
 }
 
 const UsingTypescript: FC<PageProps<DataProps>> = ({data, path}) => (
-    <Layout>
+    <ResponsiveContainer>
         <SEO title="Using TypeScript" />
         <h1>Gatsby supports TypeScript by default!</h1>
         <p>
@@ -35,7 +35,7 @@ const UsingTypescript: FC<PageProps<DataProps>> = ({data, path}) => (
             .
         </p>
         <Link to="/">Go back to the homepage</Link>
-    </Layout>
+    </ResponsiveContainer>
 );
 
 export default UsingTypescript;

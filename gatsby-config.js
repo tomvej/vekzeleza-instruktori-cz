@@ -1,12 +1,15 @@
+const sass = require('sass');
+
 module.exports = {
     siteMetadata: {
-        title: "Tvrz 2021",
-        description: "Website for Tvrz 2021",
-        author: "tom.vejpustek@centrum.cz"
+        title: 'Tvrz 2021',
+        description: 'Website for Tvrz 2021',
+        author: 'tom.vejpustek@centrum.cz',
+        lang: 'cs',
     },
     plugins: [
-        "gatsby-plugin-typegen",
-        "gatsby-plugin-react-helmet",
+        'gatsby-plugin-typegen',
+        'gatsby-plugin-react-helmet',
         /*{
           resolve: 'gatsby-source-filesystem',
           options: {
@@ -14,8 +17,8 @@ module.exports = {
             path: '${__dirname}/src/images',
           },
         },*/
-        "gatsby-transformer-sharp",
-        "gatsby-plugin-sharp"
+        'gatsby-transformer-sharp',
+        'gatsby-plugin-sharp',
         /*{
           resolve: 'gatsby-plugin-manifest',
           options: {
@@ -28,5 +31,11 @@ module.exports = {
             icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
           },
         },*/
-    ]
-}
+        {
+            resolve: 'gatsby-plugin-sass',
+            options: {
+                implementation: sass,
+            }
+        }
+    ],
+};

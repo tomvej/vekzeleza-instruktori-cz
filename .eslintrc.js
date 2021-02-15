@@ -1,38 +1,38 @@
 module.exports = {
     env: {
-        browser: true
+        browser: true,
     },
-    parser: "@typescript-eslint/parser",
+    parser: '@typescript-eslint/parser',
     parserOptions: {
         tsConfigRoot: __dirname,
-        project: "./tsconfig.json",
+        project: ['./tsconfig.json'],
         ecmaFeatures: {
-            jsx: true
-        }
+            jsx: true,
+        },
     },
     plugins: [
-        "@typescript-eslint",
-        "react",
-        "import"
+        '@typescript-eslint',
+        'react',
+        'import',
     ],
     extends: [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended",
+        'eslint:recommended',
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
-        "plugin:react/recommended",
-        "plugin:import/errors",
-        "plugin:import/warnings",
-        "plugin:import/typescript"
+        'plugin:react/recommended',
+        'plugin:import/errors',
+        'plugin:import/warnings',
+        'plugin:import/typescript',
     ],
     rules: {
-        "react/prop-types": "off",
-        "react/react-in-jsx-scope": "off",
-        "import/order": ["error", { "newlines-between": "always", "alphabetize": { "order": "asc" } }]
+        'react/prop-types': 'off',
+        'react/react-in-jsx-scope': 'off',
+        'import/order': ['error', { 'newlines-between': 'always', 'alphabetize': { 'order': 'asc' } }],
     },
     settings: {
         react: {
-            version: "detect"
-        }
-    }
-}
+            version: 'detect',
+        },
+    },
+};
