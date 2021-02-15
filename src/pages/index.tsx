@@ -2,13 +2,13 @@ import {Link} from 'gatsby';
 import {FC} from 'react';
 
 import {ResponsiveContainer} from '../components';
-import SEO from '../components/seo';
+import {PageMeta} from '../containers';
 
 import './style.scss';
 
 const IndexPage: FC = () => (
     <ResponsiveContainer>
-        <SEO title="Home" />
+        <PageMeta />
         <h1>Hi people</h1>
         <p>Welcome to your new Gatsby site.</p>
         <p>Now go build something great.</p>

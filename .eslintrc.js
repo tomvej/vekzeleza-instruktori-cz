@@ -29,6 +29,8 @@ module.exports = {
         'react/prop-types': 'off',
         'react/react-in-jsx-scope': 'off',
         'import/order': ['error', { 'newlines-between': 'always', 'alphabetize': { 'order': 'asc' } }],
+        'import/no-internal-modules': 'error',
+        'semi': 'error',
     },
     settings: {
         react: {

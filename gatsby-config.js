@@ -4,7 +4,7 @@ module.exports = {
     siteMetadata: {
         title: 'Tvrz 2021',
         description: 'Website for Tvrz 2021',
-        author: 'tom.vejpustek@centrum.cz',
+        author: 'Tvrz',
         lang: 'cs',
     },
     plugins: [

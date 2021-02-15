@@ -12,4 +12,4 @@ export const ResponsiveContainer: FC<Props> = ({
     narrow= true,
 }) => (
     <div className={classnames(style.main, {[style.narrow]: narrow})}>{children}</div>
-)
+);

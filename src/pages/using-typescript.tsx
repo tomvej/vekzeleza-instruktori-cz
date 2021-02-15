@@ -2,7 +2,7 @@ import {graphql, Link, PageProps} from 'gatsby';
 import {FC} from 'react';
 
 import {ResponsiveContainer} from '../components';
-import SEO from '../components/seo';
+import {PageMeta} from '../containers';
 
 interface DataProps {
     site: {
@@ -12,7 +12,7 @@ interface DataProps {
 
 const UsingTypescript: FC<PageProps<DataProps>> = ({data, path}) => (
     <ResponsiveContainer>
-        <SEO title="Using TypeScript" />
+        <PageMeta />
         <h1>Gatsby supports TypeScript by default!</h1>
         <p>
             This means that you can create and write <em>.ts/.tsx</em> files for your
