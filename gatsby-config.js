@@ -36,6 +36,19 @@ module.exports = {
             options: {
                 implementation: sass,
             }
-        }
+        },
+        {
+            resolve: 'gatsby-transformer-remark',
+            options: {
+                plugins: ['remark-czech-preprocessor'],
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'text',
+                path: `${__dirname}/src/text`,
+            },
+        },
     ],
 };
