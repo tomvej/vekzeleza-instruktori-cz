@@ -9,12 +9,20 @@
 
     font-family: $font-heading;
 
+    transition: .5s ease;
+
     //TODO temporary
     background-color: $color-background;
 }
 
 .landing {
     opacity: 0;
+    @include md {
+        opacity: 1;
+    }
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .bar {
