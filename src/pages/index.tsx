@@ -1,5 +1,6 @@
 import {graphql, useStaticQuery} from 'gatsby';
 import {FC} from 'react';
+import {Element} from 'react-scroll';
 
 import {ResponsiveContainer,Navbar} from '../components';
 import {PageMeta} from '../containers';
@@ -30,7 +31,7 @@ const IndexPage: FC = () => {
             />
             <ResponsiveContainer>
                 <section dangerouslySetInnerHTML={{__html: text?.childMarkdownRemark?.html ?? ''}} />
-                <h1 id="bottom">A to je vše, přátelé &hellip;</h1>
+                <Element name="bottom" ><h1>A to je vše, přátelé &hellip;</h1></Element>
             </ResponsiveContainer>
         </>
     );

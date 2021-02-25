@@ -1,1 +1,1 @@
-export const TOP_BOOKMARK = "#top";
+export const TOP_BOOKMARK = "top";
