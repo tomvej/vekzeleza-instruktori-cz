@@ -4,10 +4,12 @@ import classnames from 'classnames';
 import {FC, useCallback, useEffect, useState} from 'react';
 import {animateScroll} from 'react-scroll';
 
+import {ResponsiveContainer} from '../ResponsiveContainer';
+import {TOP_BOOKMARK} from '../constants';
+
 import style from './Navbar.module.scss';
-import {ResponsiveContainer} from './ResponsiveContainer';
+import {useNavbarContext} from './NavbarContext';
 import {ScrollLink} from './ScrollLink';
-import {TOP_BOOKMARK} from './constants';
 
 
 interface NavLinkProps {
@@ -34,8 +36,11 @@ export const Navbar : FC<Props> = ({brand, links}) => {
         return () => window.removeEventListener('scroll', onScroll);
     }, [setLanding]);
 
+    const {setHeight: setNavbarHeight} = useNavbarContext();
+    const updateNavbarRef = useCallback((el: HTMLElement) => el && setNavbarHeight(el.offsetHeight), [setNavbarHeight]);
+
     return (
-        <nav className={classnames(style.main, {[style.landing]: landing})}>
+        <nav className={classnames(style.main, {[style.landing]: landing})} ref={updateNavbarRef}>
             <ResponsiveContainer>
                 <div className={style.bar}>
                     <a
