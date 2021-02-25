@@ -1,0 +1,40 @@
+@import "../variables";
+@import "../media";
+
+.main {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: $z-index-fixed;
+
+    font-family: $font-heading;
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.toggle {
+    display: none;
+
+    @include md {
+        display: block;
+    }
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+
+    @include md {
+        flex: 1 1 100%;
+        flex-direction: column;
+        overflow: hidden;
+    }
+}
