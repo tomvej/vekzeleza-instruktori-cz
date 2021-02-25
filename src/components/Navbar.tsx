@@ -1,7 +1,7 @@
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon as FAIcon} from '@fortawesome/react-fontawesome';
 import classnames from 'classnames';
-import {FC, useEffect, useState} from 'react';
+import {FC, useCallback, useEffect, useState} from 'react';
 
 import style from './Navbar.module.scss';
 import {ResponsiveContainer} from './ResponsiveContainer';
@@ -21,6 +21,8 @@ interface Props {
 export const Navbar : FC<Props> = ({brand, links}) => {
     const [menuVisible, setMenuVisible] = useState(false);
     const toggleMenu = () => setMenuVisible((visible) => !visible);
+    const [menuHeight, setMenuHeight] = useState(0);
+    const updateMenuRef = useCallback((el: HTMLUListElement) => el && setMenuHeight(el.scrollHeight) , [setMenuHeight]);
 
     const [landing, setLanding] = useState(false);
     useEffect(() => {
@@ -38,7 +40,11 @@ export const Navbar : FC<Props> = ({brand, links}) => {
                     <button type="button" aria-label="Menu" className={style.toggle} onClick={toggleMenu}>
                         <FAIcon icon={faBars} />
                     </button>
-                    <ul className={classnames(style.menu, {[style.menuVisible]: menuVisible})}>
+                    <ul
+                        className={classnames(style.menu, {[style.menuVisible]: menuVisible})}
+                        ref={updateMenuRef}
+                        style={menuVisible ? {maxHeight: menuHeight} : {}}
+                    >
                         {links.map(({to, label}) => (
                             <li key={to}>
                                 <a href={`#${to}`}>{label}</a>
