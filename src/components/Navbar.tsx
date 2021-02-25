@@ -1,7 +1,7 @@
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon as FAIcon} from '@fortawesome/react-fontawesome';
 import classnames from 'classnames';
-import {FC, useState} from 'react';
+import {FC, useEffect, useState} from 'react';
 
 import style from './Navbar.module.scss';
 import {ResponsiveContainer} from './ResponsiveContainer';
@@ -22,8 +22,16 @@ export const Navbar : FC<Props> = ({brand, links}) => {
     const [menuVisible, setMenuVisible] = useState(false);
     const toggleMenu = () => setMenuVisible((visible) => !visible);
 
+    const [landing, setLanding] = useState(false);
+    useEffect(() => {
+        const onScroll = () => setLanding(window.scrollY === 0);
+        onScroll();
+        window.addEventListener('scroll', onScroll, {passive: true});
+        return () => window.removeEventListener('scroll', onScroll);
+    }, [setLanding]);
+
     return (
-        <nav className={style.main}>
+        <nav className={classnames(style.main, {[style.landing]: landing})}>
             <ResponsiveContainer>
                 <div className={style.bar}>
                     <a href={TOP_BOOKMARK}>{brand}</a>
