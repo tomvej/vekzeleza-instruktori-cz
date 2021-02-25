@@ -2,14 +2,15 @@ const sass = require('sass');
 
 module.exports = {
     siteMetadata: {
-        title: 'Tvrz 2021',
-        description: 'Website for Tvrz 2021',
+        title: 'Věk železa',
+        description: 'TBD',
         author: 'Tvrz',
         lang: 'cs',
     },
     plugins: [
         'gatsby-plugin-typegen',
         'gatsby-plugin-react-helmet',
+        'gatsby-plugin-fontawesome-css',
         /*{
           resolve: 'gatsby-source-filesystem',
           options: {
@@ -49,6 +50,16 @@ module.exports = {
                 name: 'text',
                 path: `${__dirname}/src/text`,
             },
+        },
+        {
+            resolve: 'gatsby-plugin-google-fonts',
+            options: {
+                fonts: [
+                    'Proza Libre',
+                    'Fondamento',
+                ],
+                display: 'swap',
+            }
         },
     ],
 };
