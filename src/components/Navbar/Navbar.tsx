@@ -5,7 +5,6 @@ import {FC, useCallback, useEffect, useState} from 'react';
 import {animateScroll} from 'react-scroll';
 
 import {ResponsiveContainer} from '../ResponsiveContainer';
-import {TOP_BOOKMARK} from '../constants';
 
 import style from './Navbar.module.scss';
 import {useNavbarContext} from './NavbarContext';
@@ -44,7 +43,7 @@ export const Navbar : FC<Props> = ({brand, links}) => {
             <ResponsiveContainer>
                 <div className={style.bar}>
                     <a
-                        href={TOP_BOOKMARK}
+                        href="#"
                         onClick={(event) => {
                             event.preventDefault();
                             animateScroll.scrollToTop();
