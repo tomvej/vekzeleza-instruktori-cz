@@ -2,8 +2,12 @@ import {FC} from 'react';
 
 import {InputProps} from './types';
 
-export const StringInput: FC<InputProps<string, HTMLInputElement>> = ({
-    value, onChange, onBlur, onFocus, disabled
+interface Props extends InputProps<string, HTMLInputElement> {
+    placeholder: string;
+}
+
+export const StringInput: FC<Props> = ({
+    value, onChange, onBlur, onFocus, disabled, placeholder
 }) => (
     <input
         type="text"
@@ -12,5 +16,6 @@ export const StringInput: FC<InputProps<string, HTMLInputElement>> = ({
         onFocus={onFocus}
         onBlur={onBlur}
         disabled={disabled}
+        placeholder={placeholder}
     />
 );

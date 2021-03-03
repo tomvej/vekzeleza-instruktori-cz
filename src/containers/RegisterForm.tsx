@@ -48,9 +48,25 @@ export const RegisterForm: FC = () => {
         <FinalForm onSubmit={onSubmit}>
             {({handleSubmit}) => (
                 <form onSubmit={handleSubmit}>
-                    <FormField name="name" component={StringInput} label="Jméno a příjmení" validate={[required]} />
-                    <FormField name="email" component={StringInput} label="E-mail" validate={[required, validEmail]} />
-                    <FormField name="message" component={StringInput} />
+                    <FormField
+                        name="name"
+                        component={StringInput}
+                        label="Jméno a příjmení"
+                        validate={[required]}
+                        props={{placeholder: 'Tvoje jméno'}}
+                    />
+                    <FormField
+                        name="email"
+                        component={StringInput}
+                        label="E-mail"
+                        validate={[required, validEmail]}
+                        props={{placeholder: 'Tvůj e-mail'}}
+                    />
+                    <FormField
+                        name="message"
+                        component={StringInput}
+                        props={{placeholder: 'Chceš nám něco vzkázat?'}}
+                    />
                     <button type="submit">Přihlásit se</button>
                 </form>
             )}
