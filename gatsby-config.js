@@ -6,6 +6,15 @@ module.exports = {
         description: 'Zažij 10 dní ve středověké vesničce',
         author: 'Tvrz',
         lang: 'cs',
+        year: 2021,
+        form: {
+            action: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSd2RZtTd8rq-lNkI2e2HtcjMCI3j_QlhbZyWEAsa9E454y2Ag/formResponse',
+            fields: {
+                name: 'entry.1094078680',
+                email: 'entry.1612418585',
+                message: 'entry.726464845',
+            }
+        }
     },
     plugins: [
         'gatsby-plugin-typegen',
