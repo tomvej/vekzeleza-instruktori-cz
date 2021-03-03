@@ -31,7 +31,7 @@ const IndexPage: FC = () => {
             />
             <Title />
             <ResponsiveContainer>
-                <section dangerouslySetInnerHTML={{__html: text?.childMarkdownRemark?.html ?? ''}} />
+                <section dangerouslySetInnerHTML={{__html: text!.childMarkdownRemark!.html}} />
                 <Element name="bottom" ><h1>A to je vše, přátelé &hellip;</h1></Element>
             </ResponsiveContainer>
             <ResponsiveContainer>

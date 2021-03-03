@@ -18,7 +18,7 @@ export const Background: FC = ({children}) => {
     `);
     return (
         <BackgroundImage
-            fluid={background?.childImageSharp?.fluid}
+            fluid={background!.childImageSharp!.fluid}
             className={style.main}
         >
             {children}

@@ -31,13 +31,13 @@ export const Title: FC<Props> = () => {
         <header className={style.main}>
             <div className={style.container}>
                 <ResponsiveContainer>
-                    <h1 className={style.title}>{text?.siteMetadata?.title}</h1>
-                    <h2 className={style.subtitle}>{text?.siteMetadata?.description}</h2>
+                    <h1 className={style.title}>{text!.siteMetadata!.title}</h1>
+                    <h2 className={style.subtitle}>{text!.siteMetadata!.description}</h2>
                 </ResponsiveContainer>
             </div>
             <div className={style.background}>
                 <BackgroundImage
-                    fluid={background?.childImageSharp?.fluid}
+                    fluid={background!.childImageSharp!.fluid}
                     className={style.image}
                 />
             </div>
