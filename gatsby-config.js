@@ -3,7 +3,7 @@ const sass = require('sass');
 module.exports = {
     siteMetadata: {
         title: 'Věk železa',
-        description: 'TBD',
+        description: 'Zažij 10 dní ve středověké vesničce',
         author: 'Tvrz',
         lang: 'cs',
     },
@@ -11,13 +11,6 @@ module.exports = {
         'gatsby-plugin-typegen',
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-fontawesome-css',
-        /*{
-          resolve: 'gatsby-source-filesystem',
-          options: {
-            name: 'images',
-            path: '${__dirname}/src/images',
-          },
-        },*/
         'gatsby-transformer-sharp',
         'gatsby-plugin-sharp',
         /*{
@@ -63,7 +56,7 @@ module.exports = {
             options: {
                 fonts: [
                     'Proza Libre',
-                    'Fondamento',
+                    'MedievalSharp',
                 ],
                 display: 'swap',
             }

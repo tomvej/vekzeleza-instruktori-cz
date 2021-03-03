@@ -17,6 +17,7 @@
 
 .landing {
     opacity: 0;
+    background-color: transparent;
     @include md {
         opacity: 1;
     }

@@ -1,0 +1,54 @@
+@import "../media";
+
+$mask: #000000;
+
+.main {
+    height: 115vh;
+    position: relative;
+    min-height: 30rem;
+}
+
+.background {
+    height: 109%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.image {
+    height: 100%;
+}
+
+.image, .image:after, .image:before {
+    mask-image: linear-gradient(#{fade-out($mask, 0)} 0%, #{fade-out($mask, 0)} 80%, fade-out($mask, 1) 100%);
+}
+
+.container {
+    height: 87%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: 8em;
+
+    @include md {
+        font-size: 6.5em;
+    }
+
+    @include sm {
+        font-size: 5em;
+    }
+}
+
+.subtitle {
+    font-size: 3em;
+
+    @include md {
+        font-size: 1.5em;
+    }
+}

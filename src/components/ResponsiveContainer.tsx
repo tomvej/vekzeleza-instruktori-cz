@@ -9,7 +9,7 @@ interface Props {
 
 export const ResponsiveContainer: FC<Props> = ({
     children,
-    narrow= true,
+    narrow= false,
 }) => (
     <div className={classnames(style.main, {[style.narrow]: narrow})}>{children}</div>
 );
