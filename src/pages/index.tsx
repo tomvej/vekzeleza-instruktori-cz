@@ -3,7 +3,7 @@ import {FC} from 'react';
 import {Element} from 'react-scroll';
 
 import {ResponsiveContainer, Navbar, Background, Title} from '../components';
-import {PageMeta, RegisterForm} from '../containers';
+import {Footer, PageMeta, RegisterForm} from '../containers';
 
 import './style.scss';
 
@@ -37,6 +37,7 @@ const IndexPage: FC = () => {
             <ResponsiveContainer>
                 <RegisterForm />
             </ResponsiveContainer>
+            <Footer />
         </Background>
     );
 };
