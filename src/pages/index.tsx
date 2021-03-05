@@ -2,7 +2,7 @@ import {graphql, useStaticQuery} from 'gatsby';
 import {FC} from 'react';
 import {Element} from 'react-scroll';
 
-import {ResponsiveContainer, Navbar, Background, Title} from '../components';
+import {ResponsiveContainer, Navbar, Background, Title, renderMarkdown} from '../components';
 import {Footer, PageMeta, RegisterForm} from '../containers';
 
 import './style.scss';
@@ -12,7 +12,7 @@ const IndexPage: FC = () => {
         query LoremIpsum {
             text: file(relativePath: {eq: "lipsum.md"}) {
                 childMarkdownRemark {
-                    html
+                    htmlAst
                 }
             }
         }
@@ -31,7 +31,9 @@ const IndexPage: FC = () => {
             />
             <Title />
             <ResponsiveContainer>
-                <section dangerouslySetInnerHTML={{__html: text!.childMarkdownRemark!.html}} />
+                <section>
+                    {renderMarkdown(text!.childMarkdownRemark!.htmlAst!)}
+                </section>
                 <Element name="bottom" ><h1>A to je vše, přátelé &hellip;</h1></Element>
             </ResponsiveContainer>
             <ResponsiveContainer>
