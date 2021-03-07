@@ -1,6 +1,8 @@
 @import "../../variables";
 @import "../../media";
 
+$background: $color-background; // TODO temporary;
+
 .main {
     position: fixed;
     width: 100%;
@@ -11,8 +13,7 @@
 
     transition: .5s ease;
 
-    //TODO temporary
-    background-color: $color-background;
+    background-color: $background;
 }
 
 .landing {
@@ -20,6 +21,7 @@
     background-color: transparent;
     @include md {
         opacity: 1;
+        background-color: $background;
     }
     &:hover {
         opacity: 1;
