@@ -1,4 +1,5 @@
 @import "../media";
+@import "../variables";
 
 $mask: #000000;
 
@@ -21,7 +22,25 @@ $mask: #000000;
 }
 
 .image, .image:after, .image:before {
-    mask-image: linear-gradient(#{fade-out($mask, 0)} 0%, #{fade-out($mask, 0)} 80%, fade-out($mask, 1) 100%);
+    mask-image: linear-gradient(#000 0%, #000 80%, transparent 100%);
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@mixin appear {
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    animation-name: appear;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .container {
@@ -31,10 +50,19 @@ $mask: #000000;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include appear;
+}
+
+@mixin heading {
+    @include threeD($color-background);
 }
 
 .title {
     font-size: 8em;
+    margin: 0;
+
+    @include heading;
 
     @include md {
         font-size: 6.5em;
@@ -47,6 +75,9 @@ $mask: #000000;
 
 .subtitle {
     font-size: 3em;
+    margin: 0;
+
+    @include heading;
 
     @include md {
         font-size: 1.5em;
