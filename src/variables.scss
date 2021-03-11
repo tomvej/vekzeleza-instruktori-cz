@@ -1,7 +1,30 @@
 $z-index-fixed: 1050;
 
 $color-background: #f1d7b2;
-$color-text: #000000;
+
+//$color-text: #232732; // space cadet
+$color-text: darken(#3D2B1F, 10%); // bistre;
+//$color-text: #36454F; // charcoal
+
+@mixin outset($color) {
+    text-shadow: 3px 3px 0 $color, 5px 5px 0 lighten($color, 25%);
+}
+
+
+@mixin threeD($color) {
+    $shadow: darken($color, 40%);
+
+    color: $color;
+    text-shadow: 0 1px 0 $shadow,
+        0 2px 0 darken($shadow, 10%),
+        0 3px 0 darken($shadow, 20%),
+        0 4px 0 darken($shadow, 30%),
+        0 5px 0 darken($shadow, 40%),
+        0 6px 0 darken($shadow, 50%),
+        0 7px 0 darken($shadow, 60%),
+        0 8px 7px darken($shadow, 70%);
+;
+}
 
 $font-normal: "Proza Libre", sans-serif;
 $font-heading: "MedievalSharp", sans-serif;
