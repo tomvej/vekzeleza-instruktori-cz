@@ -16,3 +16,12 @@ p {
     text-align: justify;
     hyphens: manual;
 }
+
+a {
+    color: $color-ref-dark;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
