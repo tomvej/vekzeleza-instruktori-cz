@@ -1,6 +1,7 @@
 const sass = require('sass');
 
 module.exports = {
+    pathPrefix: '/vekzeleza-instruktori-cz', // FIXME remove before hosting on instruktori.cz
     siteMetadata: {
         title: 'Věk železa',
         description: 'Zažij 10 dní ve středověké vesničce',

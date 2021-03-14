@@ -1,7 +1,7 @@
 {
-  "name": "tvrz-2021",
+  "name": "vekzeleza-instruktori-cz",
   "private": true,
-  "description": "Web page for Tvrz 2021.",
+  "description": "Web page for Věk železa.",
   "version": "0.1.0",
   "author": "Tomáš Vejpustek <tom.vejpustek@centrum.cz>",
   "dependencies": {
@@ -51,7 +51,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "start": "yarn develop",
     "serve": "gatsby serve",
