@@ -5,11 +5,7 @@ import {FC} from 'react';
 import {ResponsiveContainer} from './ResponsiveContainer';
 import style from './Title.module.scss';
 
-interface Props {
-
-}
-
-export const Title: FC<Props> = () => {
+export const Title: FC = ({children}) => {
     const {background, text} = useStaticQuery<GatsbyTypes.TitleQuery>(graphql`
         query Title {
             background: file(relativePath: {eq: "title.jpg"}) {
@@ -33,6 +29,7 @@ export const Title: FC<Props> = () => {
                 <ResponsiveContainer>
                     <h1 className={style.title}>{text!.siteMetadata!.title}</h1>
                     <h2 className={style.subtitle}>{text!.siteMetadata!.description}</h2>
+                    {children}
                 </ResponsiveContainer>
             </div>
             <div className={style.background}>
