@@ -33,7 +33,8 @@ $color-ref-dark: saturate(darken(#cd9b27, 15%), 10%);
         0 1px 0 $shadow,
         0 2px 0 darken($shadow, 20%),
         0 3px 0 darken($shadow, 40%),
-        0 4px 3px darken($shadow, 60%);
+        0 4px 3px darken($shadow, 60%),
+        0 0 10px #000;
 }
 
 @mixin smallThreeDDrop($color) {
@@ -43,7 +44,8 @@ $color-ref-dark: saturate(darken(#cd9b27, 15%), 10%);
         drop-shadow(0 1px 0 $shadow)
         drop-shadow(0 1px 0 darken($shadow, 20%))
         drop-shadow(0 1px 0 darken($shadow, 40%))
-        drop-shadow(0 1px 3px darken($shadow, 60%));
+        drop-shadow(0 1px 3px darken($shadow, 60%))
+        drop-shadow(0 0 10px #000);
 }
 
 $font-normal: "Proza Libre", sans-serif;
