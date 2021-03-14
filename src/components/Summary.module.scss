@@ -12,9 +12,6 @@ $color: $color-background;
     justify-content: space-around;
     align-items: center;
 
-    //background: transparentize($color-text, .5);
-    //box-shadow: 0 0 10px 10px transparentize($color-text, .5);
-
     @include md {
         flex-direction: column;
         align-items: flex-start;
