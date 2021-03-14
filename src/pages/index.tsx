@@ -3,7 +3,7 @@ import {FC} from 'react';
 import {Element} from 'react-scroll';
 
 import {ResponsiveContainer, Navbar, Background, Title, renderMarkdown, Summary} from '../components';
-import {Footer, PageMeta, RegisterForm} from '../containers';
+import {Footer, PageMeta} from '../containers';
 
 import './style.scss';
 
@@ -37,9 +37,6 @@ const IndexPage: FC = () => {
                     {renderMarkdown(text!.childMarkdownRemark!.htmlAst!)}
                 </section>
                 <Element name="bottom" ><h1>A to je vše, přátelé &hellip;</h1></Element>
-            </ResponsiveContainer>
-            <ResponsiveContainer>
-                <RegisterForm />
             </ResponsiveContainer>
             <Footer />
         </Background>
