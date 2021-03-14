@@ -26,5 +26,25 @@ $color-ref-dark: saturate(darken(#cd9b27, 15%), 10%);
         0 8px 7px darken($shadow, 70%);
 }
 
+@mixin smallThreeD($color) {
+    $shadow: darken($color, 40%);
+    color: $color;
+    text-shadow:
+        0 1px 0 $shadow,
+        0 2px 0 darken($shadow, 20%),
+        0 3px 0 darken($shadow, 40%),
+        0 4px 3px darken($shadow, 60%);
+}
+
+@mixin smallThreeDDrop($color) {
+    $shadow: darken($color, 40%);
+    color: $color;
+    filter:
+        drop-shadow(0 1px 0 $shadow)
+        drop-shadow(0 1px 0 darken($shadow, 20%))
+        drop-shadow(0 1px 0 darken($shadow, 40%))
+        drop-shadow(0 1px 3px darken($shadow, 60%));
+}
+
 $font-normal: "Proza Libre", sans-serif;
 $font-heading: "MedievalSharp", sans-serif;
