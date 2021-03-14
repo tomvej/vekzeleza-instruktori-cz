@@ -44,6 +44,7 @@ export const Navbar : FC<Props> = ({brand, links}) => {
                 <div className={style.bar}>
                     <a
                         href="#"
+                        className={style.link}
                         onClick={(event) => {
                             event.preventDefault();
                             animateScroll.scrollToTop();
@@ -60,11 +61,13 @@ export const Navbar : FC<Props> = ({brand, links}) => {
                         style={menuVisible ? {maxHeight: menuHeight} : {}}
                     >
                         {links.map(({to, label}) => (
-                            <li key={to}>
+                            <li key={to} className={style.menuItem}>
                                 <ScrollLink
                                     to={to}
                                     spy
                                     hashSpy
+                                    className={style.link}
+                                    activeClass={style.activeLink}
                                 >
                                     {label}
                                 </ScrollLink>
