@@ -6,5 +6,6 @@ export * from './markdown';
 export * from './Background';
 export * from './Footer';
 export * from './ResponsiveContainer';
+export * from './Section';
 export * from './Summary';
 export * from './Title';
