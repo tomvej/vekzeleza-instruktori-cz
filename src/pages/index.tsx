@@ -2,8 +2,8 @@ import {graphql, useStaticQuery} from 'gatsby';
 import {FC} from 'react';
 import {Element} from 'react-scroll';
 
-import {ResponsiveContainer, Navbar, Background, Title, renderMarkdown, Summary} from '../components';
-import {Footer, PageMeta} from '../containers';
+import {ResponsiveContainer, Navbar, Background, renderMarkdown} from '../components';
+import {Title, Footer, PageMeta} from '../containers';
 
 import './style.scss';
 
@@ -29,9 +29,10 @@ const IndexPage: FC = () => {
                     {to: 'bottom', label: 'Konec'},
                 ]}
             />
-            <Title>
-                <Summary />
-            </Title>
+            <Title
+                actionTo="register"
+                actionLabel="Přihlásit se"
+            />
             <ResponsiveContainer>
                 <section>
                     {renderMarkdown(text!.childMarkdownRemark!.htmlAst!)}

@@ -15,7 +15,12 @@ module.exports = {
                 email: 'entry.1612418585',
                 message: 'entry.726464845',
             }
-        }
+        },
+        summary: [
+            {label: 'Věk', value: '15\u201325'},
+            {label: 'Termín', value: '13.\u201322.\u00A08.\u00A02021'},
+            {label: 'Cena', value: '3000\u00A0Kč'},
+        ],
     },
     plugins: [
         'gatsby-plugin-typegen',

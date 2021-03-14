@@ -1,24 +1,23 @@
 import {graphql, useStaticQuery} from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-import {FC} from 'react';
+import {FC, ReactNode} from 'react';
 
 import {ResponsiveContainer} from './ResponsiveContainer';
 import style from './Title.module.scss';
 
-export const Title: FC = ({children}) => {
-    const {background, text} = useStaticQuery<GatsbyTypes.TitleQuery>(graphql`
-        query Title {
+interface Props {
+    title: ReactNode;
+    subtitle: ReactNode;
+}
+
+export const Title: FC<Props> = ({title, subtitle, children}) => {
+    const {background} = useStaticQuery<GatsbyTypes.TitleBackgroundQuery>(graphql`
+        query TitleBackground {
             background: file(relativePath: {eq: "title.jpg"}) {
                 childImageSharp {
                     fluid(maxWidth: 1920) {
                         ...GatsbyImageSharpFluid_withWebp
                     }
-                }
-            }
-            text: site {
-                siteMetadata {
-                    title
-                    description
                 }
             }
         }
@@ -27,8 +26,8 @@ export const Title: FC = ({children}) => {
         <header className={style.main}>
             <div className={style.container}>
                 <ResponsiveContainer>
-                    <h1 className={style.title}>{text!.siteMetadata!.title}</h1>
-                    <h2 className={style.subtitle}>{text!.siteMetadata!.description}</h2>
+                    <h1 className={style.title}>{title}</h1>
+                    <h2 className={style.subtitle}>{subtitle}</h2>
                     {children}
                 </ResponsiveContainer>
             </div>
