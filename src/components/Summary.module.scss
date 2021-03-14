@@ -5,6 +5,22 @@ $color: $color-background;
 
 .main {
     display: flex;
+
+    font-size: 1.2em;
+    align-items: center;
+
+    @include md {
+        font-size: 1em;
+    }
+
+    @include sm {
+        flex-direction: column;
+    }
+}
+
+.list {
+    flex: 1 1 0;
+    display: flex;
     margin: 0;
 
     font-size: 1.2em;
@@ -53,6 +69,12 @@ $color: $color-background;
 
     &:hover {
         text-decoration: none;
+    }
+
+    margin: 0 1em;
+
+    @include sm {
+        margin: 1em 0;
     }
 }
 

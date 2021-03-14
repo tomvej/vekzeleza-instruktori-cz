@@ -13,16 +13,18 @@ const info: {label: string, value: ReactNode}[] = [
 ];
 
 export const Summary: FC = () => (
-    <dl className={style.main}>
-        {info.map(({label, value}) => (
-            <div key={label} className={style.item}>
-                <dt className={style.label}>{label}</dt>
-                <dd className={style.value}>{value}</dd>
-            </div>
-        ))}
+    <div className={style.main}>
+        <dl className={style.list}>
+            {info.map(({label, value}) => (
+                <div key={label} className={style.item}>
+                    <dt className={style.label}>{label}</dt>
+                    <dd className={style.value}>{value}</dd>
+                </div>
+            ))}
+        </dl>
         <ScrollLink to="register" className={style.action}>
             Přihlásit se
             <FAIcon icon={faArrowRight} className={style.arrow} />
         </ScrollLink>
-    </dl>
+    </div>
 );
