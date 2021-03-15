@@ -19,9 +19,6 @@
 
 .image {
     height: 100%;
-}
-
-.image, .image:after, .image:before {
     mask-image: linear-gradient(#000 0%, #000 80%, transparent 100%);
 }
 
