@@ -10,11 +10,14 @@ body {
 
 h1, h2 {
     font-family: $font-heading;
+    letter-spacing: .005em;
 }
 
 p {
     text-align: justify;
     hyphens: manual;
+
+    margin-bottom: .5em;
 }
 
 a {
