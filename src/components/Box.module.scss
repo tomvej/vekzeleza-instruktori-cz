@@ -1,0 +1,16 @@
+@import "../variables";;
+
+$padding: 1em;
+$background: $color-text;
+
+.main {
+    background-color: $background;
+    box-shadow: 0 0 0 $padding $background, 0 0 10px calc(#{$padding} + 10px) $background;
+    margin: $padding 0;
+
+    color: $color-background;
+
+    a {
+        color: $color-ref-light;
+    }
+}

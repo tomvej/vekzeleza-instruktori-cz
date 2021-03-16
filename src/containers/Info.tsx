@@ -1,7 +1,7 @@
 import {graphql, useStaticQuery} from 'gatsby';
 import {FC} from 'react';
 
-import {renderMarkdown} from '../components';
+import {renderMarkdown, ResponsiveContainer} from '../components';
 
 export const Info: FC = () => {
     const {text} = useStaticQuery<GatsbyTypes.InfoQuery>(graphql`
@@ -15,8 +15,8 @@ export const Info: FC = () => {
     `);
 
     return (
-        <>
+        <ResponsiveContainer>
             {renderMarkdown(text!.childMarkdownRemark!.htmlAst)}
-        </>
+        </ResponsiveContainer>
     );
 };

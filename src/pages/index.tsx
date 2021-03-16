@@ -1,13 +1,14 @@
 import {FC} from 'react';
 
 import {ResponsiveContainer, Navbar, Background, Section} from '../components';
-import {Title, Footer, PageMeta, Info} from '../containers';
+import {Title, Footer, PageMeta, Info, Register} from '../containers';
 
 import './style.scss';
 
 const sections: Record<string, {to: string, label: string}> = {
     about: {to: 'about', label: 'O akci'},
     info: {to: 'info', label: 'Informace'},
+    register: {to: 'register', label: 'Přihláška'},
     bottom: {to: 'bottom', label: 'Konec'},
 };
 
@@ -29,9 +30,10 @@ const IndexPage: FC = () => (
             </ResponsiveContainer>
         </Section>
         <Section name={sections.info.to}>
-            <ResponsiveContainer>
-                <Info />
-            </ResponsiveContainer>
+            <Info />
+        </Section>
+        <Section name={sections.register.to}>
+            <Register />
         </Section>
         <Section name={sections.bottom.to}>
             <ResponsiveContainer>
