@@ -42,16 +42,18 @@ export const Navbar : FC<Props> = ({brand, links}) => {
         <nav className={classnames(style.main, {[style.landing]: landing})} ref={updateNavbarRef}>
             <ResponsiveContainer>
                 <div className={style.bar}>
-                    <a
-                        href="#"
-                        className={style.link}
-                        onClick={(event) => {
-                            event.preventDefault();
-                            animateScroll.scrollToTop();
-                        }}
-                    >
-                        {brand}
-                    </a>
+                    <div>
+                        <a
+                            href="#"
+                            className={style.link}
+                            onClick={(event) => {
+                                event.preventDefault();
+                                animateScroll.scrollToTop();
+                            }}
+                        >
+                            {brand}
+                        </a>
+                    </div>
                     <button type="button" aria-label="Menu" className={style.toggle} onClick={toggleMenu}>
                         <FAIcon icon={faBars} />
                     </button>
