@@ -1,0 +1,9 @@
+@import "../../media";
+
+.main {
+    column-count: 2;
+
+    @include md {
+        column-count: 1;
+    }
+}
