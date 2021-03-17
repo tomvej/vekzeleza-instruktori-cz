@@ -2,7 +2,7 @@
 
 .main {
     margin: 0 auto;
-    padding: 0 .5rem;
+    padding: 1px .5rem; // 1px prevents border collapse
 
     box-sizing: border-box;
     max-width: 70rem;
