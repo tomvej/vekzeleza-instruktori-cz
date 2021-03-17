@@ -1,5 +1,7 @@
+import classNames from 'classnames';
 import {FC} from 'react';
 
+import inputStyle from './Input.module.scss';
 import {InputProps} from './types';
 
 interface Props extends InputProps<string, HTMLInputElement> {
@@ -7,7 +9,7 @@ interface Props extends InputProps<string, HTMLInputElement> {
 }
 
 export const StringInput: FC<Props> = ({
-    value, onChange, onBlur, onFocus, disabled, placeholder
+    value, onChange, onBlur, onFocus, disabled, placeholder, invalid
 }) => (
     <input
         type="text"
@@ -17,5 +19,6 @@ export const StringInput: FC<Props> = ({
         onBlur={onBlur}
         disabled={disabled}
         placeholder={placeholder}
+        className={classNames(inputStyle.main, {[inputStyle.invalid]: invalid})}
     />
 );

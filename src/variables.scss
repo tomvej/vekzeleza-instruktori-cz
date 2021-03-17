@@ -11,5 +11,12 @@ $color-primary: #cd9b27;
 $color-ref-light: saturate(lighten(#cd9b27, 10%), 30%);
 $color-ref-dark: saturate(darken(#cd9b27, 15%), 10%);
 
+$color-error: #dc3545;
+
+$color-input-background: white;
+$color-input-border: #ced4da;
+$color-input-border-active: #b3d1cf;
+$color-input-disabled: #dddddd;
+
 $font-normal: "Proza Libre", sans-serif;
 $font-heading: "MedievalSharp", sans-serif;

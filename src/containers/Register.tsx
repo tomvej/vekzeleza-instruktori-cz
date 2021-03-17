@@ -3,6 +3,8 @@ import {FC} from 'react';
 
 import {Box, renderMarkdown, ResponsiveContainer} from '../components';
 
+import {RegisterForm} from './RegisterForm';
+
 export const Register: FC = () => {
     const {text} = useStaticQuery<GatsbyTypes.RegisterQuery>(graphql`
         query Register {
@@ -15,9 +17,10 @@ export const Register: FC = () => {
     `);
 
     return (
-        <ResponsiveContainer>
+        <ResponsiveContainer narrow>
             <Box>
                 {renderMarkdown(text.childMarkdownRemark!.htmlAst)}
+                <RegisterForm />
             </Box>
         </ResponsiveContainer>
     );

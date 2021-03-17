@@ -1,0 +1,31 @@
+@import "../../variables";
+
+.main {
+    border: 1px solid $color-input-border;
+    padding: .3em;
+
+    border-radius: .1rem;
+
+    background-color: $color-input-background;
+    margin: .2rem 0;
+    color: $color-text;
+
+    &:focus {
+        outline: none;
+        border-color: $color-input-border-active;
+        box-shadow: 0 0 0 .2rem transparentize($color-input-border-active, .75);
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        background-color: $color-input-disabled;
+    }
+}
+
+.invalid {
+    border-color: $color-error;
+
+    &:focus {
+        box-shadow: 0 0 0 .2rem transparentize($color-error, .75);
+    }
+}

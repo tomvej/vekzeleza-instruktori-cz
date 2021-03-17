@@ -4,6 +4,7 @@ import {useField} from 'react-final-form';
 
 import {composeValidations} from '../../utils';
 
+import style from './FormField.module.scss';
 import {InputProps} from './types';
 
 interface Props<V, T extends HTMLElement, P> {
@@ -19,10 +20,10 @@ export const FormField = <V, T extends HTMLElement, P>({name, label, component: 
     const showError = touched && (error !== undefined);
 
     return (
-        <div>
-            {label && <label htmlFor={name}>{label}</label>}
+        <div className={style.main}>
+            {label && <label htmlFor={name} className={style.label}>{label}</label>}
             <Component {...input} disabled={submitSucceeded} invalid={showError} {...props} />
-            {showError && <div>{error}</div>}
+            {showError && <div className={style.error}>{error}</div>}
         </div>
     );
 };

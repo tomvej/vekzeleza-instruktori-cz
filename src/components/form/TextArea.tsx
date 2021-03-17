@@ -1,5 +1,8 @@
+import classNames from 'classnames';
 import {FC} from 'react';
 
+import inputStyle from './Input.module.scss';
+import style from './TextArea.module.scss';
 import {InputProps} from './types';
 
 interface Props extends InputProps<string, HTMLTextAreaElement> {
@@ -7,7 +10,7 @@ interface Props extends InputProps<string, HTMLTextAreaElement> {
 }
 
 export const TextArea: FC<Props> = ({
-    value, onChange, onFocus, onBlur, disabled, placeholder
+    value, onChange, onFocus, onBlur, disabled, placeholder, invalid
 }) => (
     <textarea
         value={value}
@@ -16,5 +19,6 @@ export const TextArea: FC<Props> = ({
         onBlur={onBlur}
         disabled={disabled}
         placeholder={placeholder}
+        className={classNames(inputStyle.main, style.main, {[inputStyle.invalid]: invalid})}
     />
 );
