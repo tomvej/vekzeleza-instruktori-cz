@@ -11,42 +11,5 @@ $color-primary: #cd9b27;
 $color-ref-light: saturate(lighten(#cd9b27, 10%), 30%);
 $color-ref-dark: saturate(darken(#cd9b27, 15%), 10%);
 
-
-@mixin threeD($color) {
-    $shadow: darken($color, 40%);
-
-    color: $color;
-    text-shadow: 0 1px 0 $shadow,
-        0 2px 0 darken($shadow, 10%),
-        0 3px 0 darken($shadow, 20%),
-        0 4px 0 darken($shadow, 30%),
-        0 5px 0 darken($shadow, 40%),
-        0 6px 0 darken($shadow, 50%),
-        0 7px 0 darken($shadow, 60%),
-        0 8px 7px darken($shadow, 70%);
-}
-
-@mixin smallThreeD($color) {
-    $shadow: darken($color, 40%);
-    color: $color;
-    text-shadow:
-        0 1px 0 $shadow,
-        0 2px 0 darken($shadow, 20%),
-        0 3px 0 darken($shadow, 40%),
-        0 4px 3px darken($shadow, 60%),
-        0 0 10px #000;
-}
-
-@mixin smallThreeDDrop($color) {
-    $shadow: darken($color, 40%);
-    color: $color;
-    filter:
-        drop-shadow(0 1px 0 $shadow)
-        drop-shadow(0 1px 0 darken($shadow, 20%))
-        drop-shadow(0 1px 0 darken($shadow, 40%))
-        drop-shadow(0 1px 3px darken($shadow, 60%))
-        drop-shadow(0 0 10px #000);
-}
-
 $font-normal: "Proza Libre", sans-serif;
 $font-heading: "MedievalSharp", sans-serif;
