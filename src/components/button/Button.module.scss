@@ -1,0 +1,41 @@
+@import "../../variables";
+
+.main {
+    display: inline-block;
+
+    text-transform: uppercase;
+    color: $color-text;
+    font-weight: bold;
+
+    background-color: $color-primary;
+    border: .1rem solid $color-primary;
+    border-radius: .1rem;
+
+    font-size: .8em;
+    letter-spacing: .1em;
+    padding: 1.25rem 2rem;
+
+    &:focus, &:hover {
+        background-color: $color-ref-light;
+        text-decoration: none;
+    }
+
+    &:disabled {
+        background-color: $color-ref-dark;
+        cursor: not-allowed;
+    }
+}
+
+.outline {
+    background-color: transparent;
+    color: unset;
+
+    &:hover, &:focus {
+        background-color: transparentize($color-primary, .5);
+    }
+
+    &:disabled {
+        background-color: transparent;
+        border-color: $color-ref-dark;
+    }
+}
