@@ -4,7 +4,7 @@ import {graphql, useStaticQuery} from 'gatsby';
 import {FC} from 'react';
 import {Form as FinalForm} from 'react-final-form';
 
-import {FormField, StringInput, SubmitButton, TextArea} from '../components';
+import {Form, FormField, FormRow, StringInput, SubmitButton, TextArea} from '../components';
 import {submitForm} from '../utils';
 
 const required: FieldValidator<any> = (value) => ((value !== null && value !== undefined && value !== '') ? undefined : 'Toto pole je povinné.');
@@ -49,28 +49,30 @@ export const RegisterForm: FC = () => {
             {({handleSubmit, submitSucceeded, submitting}) => {
                 const disabled = submitting || submitSucceeded;
                 return (
-                    <form onSubmit={handleSubmit}>
-                        <FormField
-                            name="name"
-                            component={StringInput}
-                            label="Jméno a příjmení"
-                            validate={[required]}
-                            props={{placeholder: 'Tvoje jméno', disabled}}
-                        />
-                        <FormField
-                            name="email"
-                            component={StringInput}
-                            label="E-mail"
-                            validate={[required, validEmail]}
-                            props={{placeholder: 'Tvůj e-mail', disabled}}
-                        />
+                    <Form onSubmit={handleSubmit}>
+                        <FormRow>
+                            <FormField
+                                name="name"
+                                component={StringInput}
+                                label="Jméno a příjmení"
+                                validate={[required]}
+                                props={{placeholder: 'Tvoje jméno', disabled}}
+                            />
+                            <FormField
+                                name="email"
+                                component={StringInput}
+                                label="E-mail"
+                                validate={[required, validEmail]}
+                                props={{placeholder: 'Tvůj e-mail', disabled}}
+                            />
+                        </FormRow>
                         <FormField
                             name="message"
                             component={TextArea}
                             props={{placeholder: 'Chceš nám něco vzkázat?', disabled}}
                         />
                         <SubmitButton disabled={disabled}>Přihlásit se</SubmitButton>
-                    </form>
+                    </Form>
                 );
             }}
         </FinalForm>
