@@ -1,3 +1,4 @@
+export * from './Epigraph'
 export * from './Footer';
 export * from './Info';
 export * from './PageMeta';

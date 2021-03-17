@@ -1,7 +1,7 @@
 import {FC} from 'react';
 
 import {ResponsiveContainer, Navbar, Background, Section} from '../components';
-import {Title, Footer, PageMeta, Info, Register} from '../containers';
+import {Title, Footer, PageMeta, Info, Register, Epigraph} from '../containers';
 
 import './style.scss';
 
@@ -24,10 +24,7 @@ const IndexPage: FC = () => (
             actionLabel="Více"
         />
         <Section name={sections.about.to}>
-
-            <ResponsiveContainer>
-                <h1>Co všechno můžeš zažít</h1>
-            </ResponsiveContainer>
+            <Epigraph />
         </Section>
         <Section name={sections.info.to}>
             <Info />

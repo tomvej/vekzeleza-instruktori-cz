@@ -7,6 +7,7 @@ export * from './markdown';
 
 export * from './Background';
 export * from './Box';
+export * from './Epigraph';
 export * from './Footer';
 export * from './ResponsiveContainer';
 export * from './Section';
