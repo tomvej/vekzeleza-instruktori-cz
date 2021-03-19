@@ -33,3 +33,10 @@
         drop-shadow(0 1px 3px darken($shadow, 60%))
         drop-shadow(0 0 10px #000);
 }
+
+@mixin edgeBlur {
+    mask-image:
+        linear-gradient(to top, transparent 0, #000 10px, #000 calc(100% - 10px), transparent 100%),
+        linear-gradient(to left, transparent 0, #000 10px, #000 calc(100% - 10px), transparent 100%);
+    mask-composite: intersect;
+}
