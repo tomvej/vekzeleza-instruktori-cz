@@ -1,0 +1,32 @@
+@import "../media";
+@import "../mixins";
+
+.main {
+    display: flex;
+
+    @include md {
+        flex-direction: column;
+    }
+}
+
+.alternate {
+    flex-direction: row-reverse;
+
+    @include md {
+        flex-direction: column;
+    }
+}
+
+.text {
+    flex: 4 4 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image {
+    flex: 3 3 0;
+
+    @include edgeBlur;
+}
