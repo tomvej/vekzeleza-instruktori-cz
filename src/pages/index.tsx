@@ -1,7 +1,7 @@
 import {FC} from 'react';
 
 import {Navbar, Background, Section} from '../components';
-import {Title, Footer, PageMeta, Info, Register, Epigraph, Contact} from '../containers';
+import {Title, Footer, PageMeta, Info, Register, Epigraph, Contact, About} from '../containers';
 
 import './style.scss';
 
@@ -25,6 +25,7 @@ const IndexPage: FC = () => (
         />
         <Section name={sections.about.to}>
             <Epigraph />
+            <About />
         </Section>
         <Section name={sections.info.to}>
             <Info />
