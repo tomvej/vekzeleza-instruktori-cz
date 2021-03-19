@@ -8,6 +8,8 @@ module.exports = {
         author: 'Tvrz',
         lang: 'cs',
         year: 2021,
+        email: 'vekzeleza@instruktori.cz',
+        fbEvent: '760855861208372',
         form: {
             action: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSd2RZtTd8rq-lNkI2e2HtcjMCI3j_QlhbZyWEAsa9E454y2Ag/formResponse',
             fields: {
