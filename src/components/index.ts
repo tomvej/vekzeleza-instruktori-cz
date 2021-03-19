@@ -9,6 +9,7 @@ export * from './Background';
 export * from './Box';
 export * from './Epigraph';
 export * from './Footer';
+export * from './Image';
 export * from './ListSpread';
 export * from './ResponsiveContainer';
 export * from './Section';

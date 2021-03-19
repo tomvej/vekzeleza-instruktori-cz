@@ -1,7 +1,8 @@
 import classNames from 'classnames';
-import GatsbyImage, {FluidObject} from 'gatsby-image';
+import {FluidObject} from 'gatsby-image';
 import {FC} from 'react';
 
+import {Image} from './Image';
 import style from './TextGallery.module.scss';
 
 interface Props {
@@ -14,9 +15,8 @@ export const TextGallery: FC<Props> = ({children, image, alternate = false}) => 
         <div className={style.text}>
             {children}
         </div>
-        <GatsbyImage
-            fluid={image}
-            className={style.image}
-        />
+        <div className={style.image}>
+            <Image src={image} />
+        </div>
     </div>
 );
