@@ -71,7 +71,7 @@ export const RegisterForm: FC = () => {
                             component={TextArea}
                             props={{placeholder: 'Chceš nám něco vzkázat?', disabled}}
                         />
-                        <SubmitButton disabled={disabled}>Přihlásit se</SubmitButton>
+                        <SubmitButton disabled={disabled}>Předběžně se přihlásit</SubmitButton>
                     </Form>
                 );
             }}

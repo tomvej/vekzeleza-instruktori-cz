@@ -8,13 +8,17 @@ Budíček troubením rohu.
 
 Večerní ohně.
 
-Čas na zamyšlení?
+Čas na zamyšlení.
 
 Loupežníky.
 
+Tavení železa.
+
 Středověkou hostinu a lázně.
 
-Lukostřelbu, mletí mouky a další netradiční aktivity.
+Lukostřelbu, vikingské šachy a další netradiční aktivity.
+
+Kladení došků nebo šindele.
 
 Odpočinek po dobře odvedené práci.
 
@@ -26,4 +30,6 @@ Vůni čerstvého chleba.
 
 Řepu.
 
-Příběh kolonistů budujících/obnovujících hutní vesničku.
+Příběh kolonistů osidlujících hutní vesničku.
+
+Život bez moderních technologií.
