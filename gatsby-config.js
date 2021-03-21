@@ -19,9 +19,9 @@ module.exports = {
             }
         },
         summary: [
-            {label: 'Věk', value: '15\u201325'},
+            //{label: 'Věk', value: '15\u201325'},
             {label: 'Termín', value: '13.\u201322.\u00A08.\u00A02021'},
-            {label: 'Cena', value: '3000\u00A0Kč'},
+            //{label: 'Cena', value: '3000\u00A0Kč'},
         ],
     },
     plugins: [

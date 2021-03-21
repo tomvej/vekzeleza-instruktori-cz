@@ -1,5 +1,6 @@
 import {createElement, Fragment, ReactElement} from 'react';
 import rehype from 'rehype-react';
+import {MarkdownLink} from './MarkdownLink';
 
 type Ast = GatsbyTypes.Scalars['JSON'];
 
@@ -15,7 +16,10 @@ export type MarkdownRenderer = (ast: Ast | Node) => ReactElement;
 export const createMarkdownRenderer = (components = {}): MarkdownRenderer => new rehype({
     Fragment,
     createElement,
-    components,
+    components: {
+        a: MarkdownLink,
+        ...components,
+    },
 }).Compiler;
 
 export const renderMarkdown = createMarkdownRenderer();
