@@ -61,8 +61,7 @@ a kanady, pohorky, tmavé tenisky nebo sandály.
 
 Kolik za to zaplatím?
 ---------------------
-Ještě sestavujeme rozpočet akce, ale můžeš očekávat, že cena se bude pohybovat kolem 3000 Kč
-(spíše se ji pokusíme snížit). Hned jak cenu finalizujeme, dáme vědět.
+Ještě sestavujeme rozpočet akce, ale můžeš očekávat, že cena se bude pohybovat kolem 3000 Kč. Hned jak cenu finalizujeme, dáme vědět.
 
 Z tvého účastnického poplatku ti zajistíme jídlo, ubytování, kostým, a různé věci potřebné pro programy, kterých se budeš účastnit, například materiál pro řemeslné výrobky.
 Věk železa pořádáme bez nároku na honorář, případné přebytky půjdou do fondu údržby vesničky.
