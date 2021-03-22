@@ -68,4 +68,5 @@ Věk železa pořádáme bez nároku na honorář, případné přebytky půjdou
 
 Jel/jela bych, ale nevím, jestli ...
 ------------------------------------
-Potřebuješ vědět více? [Napiš nám](#contact).
+Potřebuješ vědět více? Podívej se do sekce [často kladených dotazů](#faq).
+A pokud ani tam nenajdeš odpověď na svou otázku, [napiš nám](#contact).

@@ -1,6 +1,7 @@
 export * from './About';
 export * from './Contact';
 export * from './Epigraph';
+export * from './Faq';
 export * from './Footer';
 export * from './Info';
 export * from './PageMeta';

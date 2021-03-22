@@ -1,7 +1,8 @@
 export * from './button';
 export * from './columns';
-export * from './navbar';
+export * from './faq';
 export * from './form';
+export * from './navbar';
 
 export * from './markdown';
 

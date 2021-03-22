@@ -40,14 +40,14 @@ export const splitHeading = (ast: Ast): {heading?: Node, nodes: Node[]} => {
     return {heading, nodes};
 };
 
-export interface Section {
+export interface AstSection {
     heading: Node;
     children: Node[];
 }
 
-export const splitIntoSections = (nodes: Node[], level: number): {preface: Node[], sections: Section[]} => {
+export const splitIntoSections = (nodes: Node[], level: number): {preface: Node[], sections: AstSection[]} => {
     const preface: Node[] = [];
-    const sections: Section[] = [];
+    const sections: AstSection[] = [];
     let children = preface;
     nodes.forEach((node) => {
         if (node.type === 'element' && node.tagName === `h${level}`) {
