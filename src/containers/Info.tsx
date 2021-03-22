@@ -1,7 +1,15 @@
 import {graphql, useStaticQuery} from 'gatsby';
 import {FC} from 'react';
 
-import {Image, renderMarkdown, renderNodes, ResponsiveContainer, splitHeading, TwoColumn} from '../components';
+import {
+    Image,
+    renderMarkdown,
+    renderNodes,
+    ResponsiveContainer,
+    splitHeading,
+    splitIntoSections,
+    TwoColumn, Unbreakable,
+} from '../components';
 
 export const Info: FC = () => {
     const {text, image} = useStaticQuery<GatsbyTypes.InfoQuery>(graphql`
@@ -22,13 +30,19 @@ export const Info: FC = () => {
     `);
 
     const {heading, nodes} = splitHeading(text!.childMarkdownRemark!.htmlAst!);
+    const {preface, sections} = splitIntoSections(nodes, 2);
 
     return (
         <>
             <ResponsiveContainer>
                 {heading && renderMarkdown(heading)}
                 <TwoColumn>
-                    {renderNodes(renderMarkdown, nodes)}
+                    {renderNodes(renderMarkdown, preface)}
+                    {sections.map(({heading, children}, index) => (
+                        <Unbreakable key={index}>
+                            {renderNodes(renderMarkdown, [heading].concat(children))}
+                        </Unbreakable>)
+                    )}
                 </TwoColumn>
             </ResponsiveContainer>
             <ResponsiveContainer narrow>

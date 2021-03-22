@@ -1,5 +1,6 @@
 import {createElement, Fragment, ReactElement} from 'react';
 import rehype from 'rehype-react';
+
 import {MarkdownLink} from './MarkdownLink';
 
 type Ast = GatsbyTypes.Scalars['JSON'];
@@ -37,4 +38,25 @@ export const splitHeading = (ast: Ast): {heading?: Node, nodes: Node[]} => {
     const nodes: Node[] = childNodes.filter((node) => !isHeading(node));
 
     return {heading, nodes};
+};
+
+export interface Section {
+    heading: Node;
+    children: Node[];
+}
+
+export const splitIntoSections = (nodes: Node[], level: number): {preface: Node[], sections: Section[]} => {
+    const preface: Node[] = [];
+    const sections: Section[] = [];
+    let children = preface;
+    nodes.forEach((node) => {
+        if (node.type === 'element' && node.tagName === `h${level}`) {
+            const section = {heading: node, children: []};
+            children = section.children;
+            sections.push(section);
+        } else {
+            children.push(node);
+        }
+    });
+    return {preface, sections};
 };
