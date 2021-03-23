@@ -4,7 +4,7 @@ import {graphql, useStaticQuery} from 'gatsby';
 import {FC} from 'react';
 import {Form as FinalForm} from 'react-final-form';
 
-import {Form, FormField, FormRow, StringInput, SubmitButton, TextArea} from '../components';
+import {Alert, Form, FormField, FormRow, StringInput, SubmitButton, TextArea} from '../components';
 import {submitForm} from '../utils';
 
 const required: FieldValidator<any> = (value) => ((value !== null && value !== undefined && value !== '') ? undefined : 'Toto pole je povinné.');
@@ -71,7 +71,8 @@ export const RegisterForm: FC = () => {
                             component={TextArea}
                             props={{placeholder: 'Chceš nám něco vzkázat?', disabled}}
                         />
-                        <SubmitButton disabled={disabled}>Předběžně se přihlásit</SubmitButton>
+                        {submitSucceeded || <SubmitButton disabled={disabled}>Předběžně se přihlásit</SubmitButton>}
+                        {submitSucceeded && <Alert>Díky za přihlášku. Co nevidět se ti ozveme.</Alert>}
                     </Form>
                 );
             }}

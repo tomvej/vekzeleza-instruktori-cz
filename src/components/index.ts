@@ -6,6 +6,7 @@ export * from './navbar';
 
 export * from './markdown';
 
+export * from './Alert';
 export * from './Background';
 export * from './Box';
 export * from './Epigraph';
