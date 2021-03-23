@@ -31,7 +31,7 @@ export const Faq: FC = () => {
             {renderNodes(renderMarkdown, preface)}
             <FaqContainer>
                 {sections.map(({heading, children}, index) => (
-                    <FaqItem key={index} id={index} title={renderMarkdown(heading)}>
+                    <FaqItem key={index} id={index} title={renderNodes(renderMarkdown, heading.children)}>
                         {renderNodes(renderMarkdown, children)}
                     </FaqItem>
                 ))}

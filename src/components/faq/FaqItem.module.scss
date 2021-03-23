@@ -1,0 +1,45 @@
+@import "../../variables";
+
+$border: 1px solid $color-text;
+
+.title {
+    font-size: $font-size-h2;
+    hyphens: none;
+}
+
+.title:first-child {
+    border-top: $border;
+}
+
+.toggle {
+    width: 100%;
+
+    padding: .5rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    text-align: left;
+}
+
+.toggle:focus, .toggle:hover {
+    text-decoration: underline dotted;
+    text-decoration-skip-ink: auto;
+}
+
+.expanded .toggle {
+    font-weight: bold;
+}
+
+.icon {
+    transition: .5s ease;
+    transform: rotate(0deg);
+}
+
+.expanded .icon {
+    transform: rotate(-180deg);
+}
+
+.item {
+    margin: 0;
+    border-bottom: $border;
+}
