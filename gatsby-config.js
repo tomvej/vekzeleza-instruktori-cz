@@ -30,18 +30,19 @@ module.exports = {
         'gatsby-plugin-fontawesome-css',
         'gatsby-transformer-sharp',
         'gatsby-plugin-sharp',
-        /*{
-          resolve: 'gatsby-plugin-manifest',
-          options: {
-            name: 'Tvrz 2021',
-            short_name: 'Tvrz',
-            start_url: '/',
-            background_color: '#663399',
-            theme_color: '#663399',
-            display: 'minimal-ui',
-            icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
-          },
-        },*/
+        {
+            resolve: 'gatsby-plugin-manifest',
+            options: {
+                name: 'Věk železa 13.\u201322.\u00A08.\u00A02021',
+                short_name: 'Věk železa',
+                description: 'Zažij 10 dní ve středověké vesničce',
+                start_url: '/',
+                background_color: '#f1d7b2',
+                theme_color: '#cd9b27',
+                display: 'minimal-ui',
+                icon: 'src/images/favicon.png',
+            },
+        },
         {
             resolve: 'gatsby-plugin-sass',
             options: {
