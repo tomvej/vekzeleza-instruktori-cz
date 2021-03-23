@@ -3,8 +3,6 @@ name: Deploy on github pages
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
   # allows manual dispatch
   workflow_dispatch:
 
