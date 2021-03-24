@@ -12,7 +12,7 @@ Večerní ohně.
 
 Loupežníky.
 
-Tavení železa.
+Tavbu železné rudy.
 
 Středověkou hostinu a lázně.
 

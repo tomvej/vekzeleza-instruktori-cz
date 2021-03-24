@@ -14,7 +14,7 @@ Pro koho to je?
 Na akci můžeš jet, pokud ti je mezi 17 a 25, nevadí ti trochu si zaběhat a při tom se zapotit,
 chceš potkat nové lidi a baví tě o věcech přemýšlet.
 
-Je ti méně než 17 nebo více než 25 a přesto chceš jet? [Napiš nám](#contact) a pobavím se,
+Je ti méně než 17 nebo více než 25 a přesto chceš jet? [Napiš nám](#contact) a pobavíme se,
 jestli to dává smysl.
 
 Jak to bude probíhat?
@@ -71,7 +71,7 @@ kterých se budeš účastnit, například materiál pro řemeslné výrobky. V�
 na honorář, případné přebytky půjdou do fondu údržby vesničky.
 
 Přijde ti 3250 Kč moc a zvažuješ, jestli na akci jet? [Napiš nám](#contact) a zkusíme spolu vymyslet,
-jak pro tebe akci udělat levnější. Nabízí se například možnost přijet do vesničky na brigádu a část ceny si opdracovat.
+jak pro tebe akci udělat levnější. Nabízí se například možnost přijet do vesničky na brigádu a část ceny si odpracovat.
 
 Jel/jela bych, ale nevím, jestli ...
 ------------------------------------

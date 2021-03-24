@@ -11,7 +11,7 @@ Nechceme však pořádat akci, která by mohla ohrozit účastníky a jejich bl�
 dost bezpečná, akci nejpozději 1. 8. zrušíme a všechny peníze dostaneš zpátky. Při pořádání akce se budeme držet
 nejen nařízení, ale i doporučení vlády a hygieny.
 
-Zároveň jsme ti výjimečně ochotní vrátit celý účastnický poplatek, pokud se rozhodneš na akci nejet
+Zároveň jsme ti ochotní výjimečně vrátit celý účastnický poplatek, pokud se rozhodneš na akci nejet
 ze zdravotních důvodů nebo jiných důvodů souvisejících s pandemií (karanténa, osobní či pracovní situace, &hellip;).
 
 Co když na akci nikoho neznám?
@@ -60,7 +60,7 @@ Trochu hlubší důvod je ten, že chceme, abyste se vžili do příběhu a uži
 Čemuž nepomůže, pokud budeš řešit, co se děje doma, v práci nebo někde jinde.
 
 Samozřejmě, pokud to bude nezbytně nutné, budeš mít prostor si telefon zkontrolovat a případně si někde stranou zavolat.
-Jak moc si potom akci užiješ necháme na tobě.
+Jak moc si potom akci užiješ, necháme na tobě.
 
 Nevím, jestli chci ve svém volném čase jet někam pracovat &hellip;
 -------------------------------------------------------------
