@@ -19,6 +19,7 @@ $border: 1px solid $color-text;
     justify-content: space-between;
 
     text-align: left;
+    user-select: text;
 }
 
 .toggle:focus, .toggle:hover {
