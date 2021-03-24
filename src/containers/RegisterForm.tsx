@@ -71,7 +71,7 @@ export const RegisterForm: FC = () => {
                             component={TextArea}
                             props={{placeholder: 'Chceš nám něco vzkázat?', disabled}}
                         />
-                        {submitSucceeded || <SubmitButton disabled={disabled}>Předběžně se přihlásit</SubmitButton>}
+                        {submitSucceeded || <SubmitButton disabled={disabled}>Přihlásit se</SubmitButton>}
                         {submitSucceeded && <Alert>Díky za přihlášku. Co nevidět se ti ozveme.</Alert>}
                     </Form>
                 );

@@ -173,5 +173,8 @@ Tvrze, konkrétně práci a řemeslech.
 
 Co když už jsem na Tvrzi byl/a? Můžu jet znovu?
 -----------------------------------------------
-Ano, pokud tě Věk železa zaujal, rádi tě uvidíme znovu.
+Pokud tě Věk železa zaujal a myslíš si, že si sedneš s ostatními účastníky (letos děláme Tvrz pro lidi mezi 17 a 25),
+[přihlaš se](#register), rádi tě uvidíme!
 
+Necítíš se na to, jet jako účastník, ale přesto chceš být u toho? Super! [Napiš nám](#contact) a spolu vymyslíme,
+v jaké roli bys na akci mohl/a být.

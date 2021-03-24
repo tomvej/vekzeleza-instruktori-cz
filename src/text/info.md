@@ -11,9 +11,11 @@ Ve středověké vesničce u Zámku Rosice kousek od Brna.
 
 Pro koho to je?
 ---------------
-Na akci můžeš jet, pokud ti je mezi 18 a 25, nevadí ti trochu si zaběhat a při tom se zapotit,
-chceš potkat nové lidi a baví tě o věcech přemýšlet. Je ti méně než 18 nebo více než 25?
-Napiš nám a nějak se domluvíme.
+Na akci můžeš jet, pokud ti je mezi 17 a 25, nevadí ti trochu si zaběhat a při tom se zapotit,
+chceš potkat nové lidi a baví tě o věcech přemýšlet.
+
+Je ti méně než 17 nebo více než 25 a přesto chceš jet? [Napiš nám](#contact) a pobavím se,
+jestli to dává smysl.
 
 Jak to bude probíhat?
 ---------------------
@@ -61,10 +63,15 @@ a kanady, pohorky, tmavé tenisky nebo sandály.
 
 Kolik za to zaplatím?
 ---------------------
-Ještě sestavujeme rozpočet akce, ale můžeš očekávat, že cena se bude pohybovat kolem 3000 Kč. Hned jak cenu finalizujeme, dáme vědět.
+Čím dříve se přihlásíš, tím méně zaplatíš. Pokud akci zaplatíš do 16. 5. 2021, bude tě stát 3250 Kč.
+Později tě bude stát 3500 Kč.
 
-Z tvého účastnického poplatku ti zajistíme jídlo, ubytování, kostým, a různé věci potřebné pro programy, kterých se budeš účastnit, například materiál pro řemeslné výrobky.
-Věk železa pořádáme bez nároku na honorář, případné přebytky půjdou do fondu údržby vesničky.
+Z tvého účastnického poplatku ti zajistíme jídlo, ubytování, kostým, a různé věci potřebné pro programy,
+kterých se budeš účastnit, například materiál pro řemeslné výrobky. Věk železa pořádáme bez nároku
+na honorář, případné přebytky půjdou do fondu údržby vesničky.
+
+Přijde ti 3250 Kč moc a zvažuješ, jestli na akci jet? [Napiš nám](#contact) a zkusíme spolu vymyslet,
+jak pro tebe akci udělat levnější. Nabízí se například možnost přijet do vesničky na brigádu a část ceny si opdracovat.
 
 Jel/jela bych, ale nevím, jestli ...
 ------------------------------------

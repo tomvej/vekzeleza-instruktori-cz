@@ -21,8 +21,8 @@ const IndexPage: FC = () => (
             links={Object.values(sections)}
         />
         <Title
-            actionTo={sections.about.to}
-            actionLabel="Více"
+            actionTo={sections.register.to}
+            actionLabel="Přihlásit se"
         />
         <Section name={sections.about.to}>
             <Epigraph />
