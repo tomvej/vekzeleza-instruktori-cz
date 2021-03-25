@@ -66,7 +66,7 @@ Kolik za to zaplatím?
 Čím dříve se přihlásíš, tím méně zaplatíš. Pokud akci zaplatíš do 16. 5. 2021, bude tě stát 3250 Kč.
 Později tě bude stát 3500 Kč.
 
-Z tvého účastnického poplatku ti zajistíme jídlo, ubytování, kostým, a různé věci potřebné pro programy,
+Z tvého účastnického poplatku ti zajistíme jídlo, ubytování, kostým a různé věci potřebné pro programy,
 kterých se budeš účastnit, například materiál pro řemeslné výrobky. Věk železa pořádáme bez nároku
 na honorář, případné přebytky půjdou do fondu údržby vesničky.
 

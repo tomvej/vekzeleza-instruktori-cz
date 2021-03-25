@@ -5,7 +5,7 @@ Chybí ti odpověď na nějakou tvou otázku? [Napiš nám!](#contact)
 A co COVID?
 -----------
 V současné situaci nikdo neví, jaká bude o prázdninách epidemiologická situace. Pevně ale věříme,
-že nám akci uspořádat dovolí a připravujeme ji, jako by proběhnout měla.
+že nám akci uspořádat dovolí, a připravujeme ji, jako by proběhnout měla.
 
 Nechceme však pořádat akci, která by mohla ohrozit účastníky a jejich blízké. Pokud nebude v srpnu situace
 dost bezpečná, akci nejpozději 1. 8. zrušíme a všechny peníze dostaneš zpátky. Při pořádání akce se budeme držet
@@ -163,7 +163,7 @@ Takže Věk železa LARP není. Má sice prvky LARPu, ale od tebe to nebude vyž
 Je teda Věk železa Tvrz a nebo není?
 ------------------------------------
 Věk železa navazuje na tradiční akci Tvrz, která probíhala rok co rok posledních 26 let. Za tu dobu se postupně vyvíjela
-a měnila, takže pro lidi, kteří na Tvrz byli před 20 lety to byl jiný zážitek než pro ty, co na ní byli před rokem.
+a měnila, takže pro lidi, kteří na Tvrzi byli před 20 lety, to byl jiný zážitek než pro ty, co na ní byli před rokem.
 
 Každý ročník je specifický. Má svoji strukturu a příběh, letošní akce bude o něčem trochu jiném než loni nebo předloni a tomu odpovídá název.
 
@@ -173,8 +173,8 @@ Tvrze, konkrétně práci a řemeslech.
 
 Co když už jsem na Tvrzi byl/a? Můžu jet znovu?
 -----------------------------------------------
-Pokud tě Věk železa zaujal a myslíš si, že si sedneš s ostatními účastníky (letos děláme Tvrz pro lidi mezi 17 a 25),
-[přihlaš se](#register), rádi tě uvidíme!
+Pokud tě Věk železa zaujal a myslíš si, že si sedneš s ostatními účastníky
+(je to zážitková akce pro lidi mezi 17 a 25), [přihlaš se](register), rádi tě uvidíme!
 
 Necítíš se na to, jet jako účastník, ale přesto chceš být u toho? Super! [Napiš nám](#contact) a spolu vymyslíme,
 v jaké roli bys na akci mohl/a být.
