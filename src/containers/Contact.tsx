@@ -4,22 +4,15 @@ import {FontAwesomeIcon as FAIcon} from '@fortawesome/react-fontawesome';
 import {graphql, useStaticQuery} from 'gatsby';
 import {FC} from 'react';
 
-import {HrefButton, Image, ResponsiveContainer} from '../components';
+import {Centering, HrefButton, ResponsiveContainer} from '../components';
 
 export const Contact: FC = () => {
-    const {contact, image} = useStaticQuery<GatsbyTypes.ContactQuery>(graphql`
+    const {contact} = useStaticQuery<GatsbyTypes.ContactQuery>(graphql`
         query Contact {
             contact: site {
                 siteMetadata {
                     fbEvent
                     email
-                }
-            }
-            image: file(relativePath: {eq: "oběd.jpg"}) {
-                childImageSharp {
-                    fluid (maxWidth: 1920, quality: 90) {
-                        ...GatsbyImageSharpFluid_withWebp
-                    }
                 }
             }
         }
@@ -29,11 +22,8 @@ export const Contact: FC = () => {
     const event = contact.siteMetadata!.fbEvent!;
 
     return (
-        <>
-            <ResponsiveContainer narrow>
-                <Image src={image.childImageSharp!.fluid!} />
-            </ResponsiveContainer>
-            <ResponsiveContainer narrow center>
+        <ResponsiveContainer narrow>
+            <Centering>
                 <h1>Kontakt</h1>
                 <p>Chceš se na něco zeptat? Napiš nám!</p>
                 <p><HrefButton href={`mailto:${email}`} outline><FAIcon icon={faEnvelope} /> {email}</HrefButton></p>
@@ -41,7 +31,7 @@ export const Contact: FC = () => {
 
                 <p><HrefButton href={`https://www.facebook.com/events/${event}`} outline><FAIcon
                     icon={faFacebookF} /> Sdílej!</HrefButton></p>
-            </ResponsiveContainer>
-        </>
+            </Centering>
+        </ResponsiveContainer>
     );
 };

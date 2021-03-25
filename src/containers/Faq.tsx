@@ -4,6 +4,7 @@ import {FC} from 'react';
 import {
     FaqContainer,
     FaqItem,
+    Image,
     renderMarkdown,
     renderNodes,
     ResponsiveContainer,
@@ -12,11 +13,18 @@ import {
 } from '../components';
 
 export const Faq: FC = () => {
-    const {text} = useStaticQuery<GatsbyTypes.FaqQuery>(graphql`
+    const {text, image} = useStaticQuery<GatsbyTypes.FaqQuery>(graphql`
         query Faq {
             text: file(relativePath: {eq: "faq.md"}) {
                 childMarkdownRemark {
                     htmlAst
+                }
+            }
+            image: file(relativePath: {eq: "oběd.jpg"}) {
+                childImageSharp {
+                    fluid (maxWidth: 1920, quality: 90) {
+                        ...GatsbyImageSharpFluid_withWebp
+                    }
                 }
             }
         }
@@ -36,6 +44,7 @@ export const Faq: FC = () => {
                     </FaqItem>
                 ))}
             </FaqContainer>
+            <Image src={image!.childImageSharp!.fluid!} />
         </ResponsiveContainer>
     );
 };

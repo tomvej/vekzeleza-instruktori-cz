@@ -9,6 +9,7 @@ export * from './markdown';
 export * from './Alert';
 export * from './Background';
 export * from './Box';
+export * from './Centering';
 export * from './Epigraph';
 export * from './Footer';
 export * from './Image';

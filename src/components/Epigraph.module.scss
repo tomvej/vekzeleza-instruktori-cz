@@ -4,13 +4,4 @@
     text-shadow: 0 1px 1px darken($color-background, 50%);
     font-size: 1.5em;
     font-family: $font-heading;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    p {
-        text-align: center;
-        hyphens: none;
-    }
 }
