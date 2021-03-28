@@ -25,6 +25,18 @@ module.exports = {
         ],
     },
     plugins: [
+        {
+            resolve: `gatsby-plugin-google-gtag`,
+            options: {
+                // You can add multiple tracking ids and a pageview event will be fired for all of them.
+                trackingIds: [
+                    'G-3YW3QH1VJT', // Google Analytics / GA
+                ],
+                gtagConfig: {
+                    anonymize_ip: true,
+                },
+            }
+        },
         'gatsby-plugin-typegen',
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-fontawesome-css',

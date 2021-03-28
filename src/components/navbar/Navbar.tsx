@@ -4,6 +4,7 @@ import classnames from 'classnames';
 import {FC, useCallback, useEffect, useState} from 'react';
 import {animateScroll} from 'react-scroll';
 
+import {pageView} from '../../utils';
 import {ResponsiveContainer} from '../ResponsiveContainer';
 
 import style from './Navbar.module.scss';
@@ -70,6 +71,7 @@ export const Navbar : FC<Props> = ({brand, links}) => {
                                     hashSpy
                                     className={style.link}
                                     activeClass={style.activeLink}
+                                    onSetActive={() => pageView(label, to)}
                                 >
                                     {label}
                                 </ScrollLink>
