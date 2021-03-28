@@ -4,7 +4,8 @@ import classnames from 'classnames';
 import {FC, useCallback, useEffect, useState} from 'react';
 import {animateScroll} from 'react-scroll';
 
-import {pageView} from '../../utils';
+import {pageView, useMedia} from '../../utils';
+import {DropdownAnimation} from '../DropdownAnimation';
 import {ResponsiveContainer} from '../ResponsiveContainer';
 
 import style from './Navbar.module.scss';
@@ -25,8 +26,8 @@ interface Props {
 export const Navbar : FC<Props> = ({brand, links}) => {
     const [menuVisible, setMenuVisible] = useState(false);
     const toggleMenu = () => setMenuVisible((visible) => !visible);
-    const [menuHeight, setMenuHeight] = useState(0);
-    const updateMenuRef = useCallback((el: HTMLUListElement) => el && setMenuHeight(el.scrollHeight) , [setMenuHeight]);
+
+    const {md} = useMedia();
 
     const [landing, setLanding] = useState(false);
     useEffect(() => {
@@ -58,10 +59,10 @@ export const Navbar : FC<Props> = ({brand, links}) => {
                     <button type="button" aria-label="Menu" className={style.toggle} onClick={toggleMenu}>
                         <FAIcon icon={faBars} />
                     </button>
-                    <ul
-                        className={classnames(style.menu, {[style.menuVisible]: menuVisible})}
-                        ref={updateMenuRef}
-                        style={menuVisible ? {maxHeight: menuHeight} : {}}
+                    <DropdownAnimation
+                        className={style.menu}
+                        visible={menuVisible || !md}
+                        tag="ul"
                     >
                         {links.map(({to, label}) => (
                             <li key={to} className={style.menuItem}>
@@ -77,7 +78,7 @@ export const Navbar : FC<Props> = ({brand, links}) => {
                                 </ScrollLink>
                             </li>
                         ))}
-                    </ul>
+                    </DropdownAnimation>
                 </div>
             </ResponsiveContainer>
         </nav>

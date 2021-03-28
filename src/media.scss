@@ -6,6 +6,12 @@
     xlarge  90em
  */
 
+:export {
+    sm: 39.9375rem;
+    md: 63.9375rem;
+    lg: 74.9375rem;
+}
+
 @mixin sm {
     @media screen and (max-width: 39.9375rem) {
         @content
@@ -25,13 +31,13 @@
 }
 
 @mixin lg {
-    @media screen and (max-width: 75.9375rem) {
+    @media screen and (max-width: 74.9375rem) {
         @content
     }
 }
 
 @mixin lg-only {
-    @media screen and (min-width: 64rem) and (max-width: 75.9375rem) {
+    @media screen and (min-width: 64rem) and (max-width: 74.9375rem) {
         @content
     }
 }
