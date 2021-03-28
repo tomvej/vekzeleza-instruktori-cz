@@ -1,3 +1,4 @@
+import {OutboundLink} from 'gatsby-plugin-google-gtag';
 import {FC} from 'react';
 
 import {ScrollLink} from './navbar';
@@ -8,4 +9,4 @@ interface Props {
 
 export const MarkdownLink: FC<Props> = ({href, children}) => href && href.startsWith('#')
     ? <ScrollLink to={href.substring(1)}>{children}</ScrollLink>
-    : <a href={href}>{children}</a>;
+    : <OutboundLink href={href}>{children}</OutboundLink>;
