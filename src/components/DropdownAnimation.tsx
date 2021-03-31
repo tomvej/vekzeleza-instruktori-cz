@@ -21,7 +21,9 @@ export const DropdownAnimation: FC<Props> = ({
         ref.current = el;
     };
     useLayoutEffect(() => {
-        setMaxHeight(ref.current?.scrollHeight ?? 0);
+        if (ref.current && visible) {
+            setMaxHeight(ref.current.scrollHeight);
+        }
     }, [visible]);
 
     return (
