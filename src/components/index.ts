@@ -3,6 +3,7 @@ export * from './columns';
 export * from './faq';
 export * from './form';
 export * from './navbar';
+export * from './team';
 
 export * from './markdown';
 
