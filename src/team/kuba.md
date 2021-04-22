@@ -1,6 +1,7 @@
 ---
 name: "Kuba"
 order: 1
+photo: "kuba.jpg"
 ---
 Na akci mě potkáš buď v kovárně nebo někde kolem kuchyně, jak se snažím ulovit něco k snědku. Občas taky umravňuju koně, aby se vzájemně nesežrali.
 

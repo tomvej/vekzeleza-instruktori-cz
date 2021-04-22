@@ -1,5 +1,6 @@
 ---
 name: "Bětka"
+photo: "betka.jpg"
 order: 5
 ---
 Kolem Tvrze se zatím vyskytuju jen krátce, mezi organizátory jsem prvním rokem. Na žádné řemeslo ani práci jsem se zatím nezaměřila,

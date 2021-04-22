@@ -1,6 +1,7 @@
 ---
 name: "Hanka"
 order: 5
+photo: "hanicka.jpg"
 ---
 Na akci vystupuju v roli klíčnice, jakési hospodyně, která musí vědět o všem a ke všemu má komentář.
 
