@@ -1,5 +1,6 @@
 ---
 name: "Jedla"
+order: 6
 ---
 Žiji v Brně, vystudoval jsem technickou kybernetiku. Pracují na Akademii věd kde se zabývám vývojem přesných
 laserových metod měření. Ve volném čase chodím po horách, spím ve stanu na sněhu, jezdím na kole, lyžích, ap.

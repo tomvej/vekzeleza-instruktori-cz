@@ -1,5 +1,6 @@
 ---
 name: "Janek"
+order: 3
 ---
 K projektu Tvrz i zážitkové pedagogice jsem se dostal nedávno a na téhle prázdninovce budu poprvé. Nejsem mistr žádného řemesla,
 ale určitě mě můžeš potkat u ohně s kytarou.

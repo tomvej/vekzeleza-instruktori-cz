@@ -8,7 +8,8 @@ export const Team: FC = () => {
         query Team {
             team: allMarkdownRemark(filter: {
                 fileAbsolutePath: {glob: "**/team/*.md"}
-            } ) {
+                frontmatter: {order: {gt: 0}}
+            }, sort: {fields: [frontmatter___order]} ) {
                 nodes {
                     frontmatter {
                         name

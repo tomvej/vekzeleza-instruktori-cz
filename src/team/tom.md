@@ -1,5 +1,6 @@
 ---
 name: "Tom"
+order: 2
 ---
 Na akci mě potkáš v roli mistra sedláře: zabývám se výrobou opasků, brašen, tašvic
 a jiných kožených výrobků. Taky mě můžeš najít na střeše, na kterou tě naučím
