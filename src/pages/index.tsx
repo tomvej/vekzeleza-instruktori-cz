@@ -1,7 +1,7 @@
 import {FC} from 'react';
 
 import {Navbar, Background, Section} from '../components';
-import {Title, Footer, PageMeta, Info, Register, Epigraph, Contact, About, Faq} from '../containers';
+import {Title, Footer, PageMeta, Info, Register, Epigraph, Contact, About, Faq, Team} from '../containers';
 
 import './style.scss';
 
@@ -10,6 +10,7 @@ const sections: Record<string, {to: string, label: string}> = {
     info: {to: 'info', label: 'Informace'},
     register: {to: 'register', label: 'Přihláška'},
     faq: {to: 'faq', label: 'FAQ'},
+    team: {to: 'team', label: 'Tým'},
     contact: {to: 'contact', label: 'Kontakt'},
 };
 
@@ -36,6 +37,9 @@ const IndexPage: FC = () => (
         </Section>
         <Section name={sections.faq.to}>
             <Faq />
+        </Section>
+        <Section name={sections.team.to}>
+            <Team />
         </Section>
         <Section name={sections.contact.to}>
             <Contact />

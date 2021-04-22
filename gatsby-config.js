@@ -82,6 +82,13 @@ module.exports = {
             },
         },
         {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'team',
+                path: `${__dirname}/src/team`,
+            },
+        },
+        {
             resolve: 'gatsby-plugin-google-fonts',
             options: {
                 fonts: [

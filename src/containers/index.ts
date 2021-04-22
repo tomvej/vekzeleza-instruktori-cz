@@ -7,4 +7,5 @@ export * from './Info';
 export * from './PageMeta';
 export * from './Register';
 export * from './RegisterForm';
+export * from './Team';
 export * from './Title';
