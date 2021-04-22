@@ -1,7 +1,7 @@
 import {graphql, useStaticQuery} from 'gatsby';
-import {FC} from 'react';
+import {FC, useState} from 'react';
 
-import {renderMarkdown, ResponsiveContainer, TeamMember} from '../components';
+import {renderMarkdown, ResponsiveContainer, TeamMember, TeamMemberShowcase, TeamShowcase} from '../components';
 
 export const Team: FC = () => {
     const {team} = useStaticQuery<GatsbyTypes.TeamQuery>(graphql`
@@ -26,15 +26,28 @@ export const Team: FC = () => {
             }
         }
     `);
+    const [activeMember, setActiveMember] = useState<string>(null);
 
     return (
         <ResponsiveContainer>
             <h1>Kdo to pořádá</h1>
+            <TeamShowcase>
+                {team.nodes.map(({frontmatter}) => (
+                    <TeamMemberShowcase
+                        key={frontmatter!.name!}
+                        name={frontmatter!.name!}
+                        image={frontmatter!.photo!.childImageSharp!.fluid!}
+                        onClick={() => setActiveMember(frontmatter!.name!)}
+                        active={activeMember === frontmatter!.name!}
+                    />
+                ))}
+            </TeamShowcase>
             {team.nodes.map(({frontmatter, htmlAst}) => (
                 <TeamMember
-                    key={frontmatter!.name}
-                    name={frontmatter!.name}
+                    key={frontmatter!.name!}
+                    name={frontmatter!.name!}
                     image={frontmatter!.photo!.childImageSharp!.fluid!}
+                    active={activeMember === frontmatter!.name!}
                 >
                     {renderMarkdown(htmlAst!)}
                 </TeamMember>

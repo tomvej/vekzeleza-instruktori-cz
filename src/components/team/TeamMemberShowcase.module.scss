@@ -1,0 +1,12 @@
+.main {
+    width: 150px;
+    filter: blur(2px); // FIXME more interesting filter?
+
+    &:hover {
+        filter: none;
+    }
+}
+
+.active {
+    filter: none;
+}

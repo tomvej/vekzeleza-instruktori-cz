@@ -1,15 +1,18 @@
-import GatsbyImage, {FluidObject} from 'gatsby-image';
+import classNames from 'classnames';
+import {FluidObject} from 'gatsby-image';
 import {FC} from 'react';
+
+import style from './TeamMember.module.scss';
 
 interface Props {
     name: string;
     image: FluidObject;
+    active?: boolean;
 }
 
-export const TeamMember: FC<Props> = ({name, image, children}) => (
-    <div>
+export const TeamMember: FC<Props> = ({name, children, active = false}) => (
+    <div className={classNames({[style.hidden]: !active})}>
         <h2>{name}</h2>
-        <GatsbyImage fluid={image} />
         {children}
     </div>
 );
