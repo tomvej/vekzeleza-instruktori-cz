@@ -1,6 +1,7 @@
 .main {
+    flex: 0 1 150px;
+
     cursor: pointer;
-    width: 150px;
     filter: blur(1px); // FIXME more interesting filter?
 }
 
