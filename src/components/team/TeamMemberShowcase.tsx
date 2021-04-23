@@ -9,11 +9,14 @@ interface Props {
     name: string;
     image: FluidObject;
     active?: boolean;
-    onClick: () => void; // FIXME use hover to activate?
+    onActivate: () => void;
 }
 
-export const TeamMemberShowcase: FC<Props> = ({name, image, active = false, onClick}) => (
-    <button onClick={onClick} className={classNames(style.main, {[style.active]: active})}>
+export const TeamMemberShowcase: FC<Props> = ({name, image, active = false, onActivate}) => (
+    <div
+        onMouseMove={onActivate}
+        className={classNames(style.main, {[style.active]: active})}
+    >
         <Portrait src={image} title={name} />
-    </button>
+    </div>
 );

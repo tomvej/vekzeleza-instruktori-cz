@@ -37,7 +37,7 @@ export const Team: FC = () => {
                         key={frontmatter!.name!}
                         name={frontmatter!.name!}
                         image={frontmatter!.photo!.childImageSharp!.fluid!}
-                        onClick={() => setActiveMember(frontmatter!.name!)}
+                        onActivate={() => setActiveMember(frontmatter!.name!)}
                         active={activeMember === frontmatter!.name!}
                     />
                 ))}
