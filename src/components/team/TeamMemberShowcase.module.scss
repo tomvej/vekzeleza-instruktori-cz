@@ -2,7 +2,7 @@
     flex: 0 1 150px;
 
     cursor: pointer;
-    filter: blur(1px); // FIXME more interesting filter?
+    filter: blur(2px) grayscale(50%);
 }
 
 .active {
