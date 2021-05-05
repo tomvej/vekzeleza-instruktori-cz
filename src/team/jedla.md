@@ -17,4 +17,4 @@ Sám se nejraději věnuji výrobě nožů.
 Moje působení na Tvrzi posazené do minulosti je zdánlivě výjimkou. Ve skutečnosti se mi na tom líbí hledání
 nestandardních řešení, buď těch nových, která tu ještě nebyla, nebo těch, na která se již zapomělo.
 
-Kamarádi o mě říkají, že mám rád věci optimalizované. Nevím, jestli to je urážka nebo lichotka, ale nejspíš je to pravda.
+Kamarádi o mně říkají, že mám rád věci optimalizované. Nevím, jestli to je urážka nebo lichotka, ale nejspíš je to pravda.
