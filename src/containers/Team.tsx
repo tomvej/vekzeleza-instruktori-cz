@@ -13,7 +13,7 @@ export const Team: FC = () => {
                 nodes {
                     frontmatter {
                         name
-                        photo {
+                        portrait {
                             childImageSharp {
                                 fluid(maxWidth: 150) {
                                     ...GatsbyImageSharpFluid_withWebp
@@ -36,7 +36,7 @@ export const Team: FC = () => {
                     <TeamMemberShowcase
                         key={frontmatter!.name!}
                         name={frontmatter!.name!}
-                        image={frontmatter!.photo!.childImageSharp!.fluid!}
+                        image={frontmatter!.portrait!.childImageSharp!.fluid!}
                         onActivate={() => setActiveMember(frontmatter!.name!)}
                         active={activeMember === frontmatter!.name!}
                     />
@@ -46,7 +46,7 @@ export const Team: FC = () => {
                 <TeamMember
                     key={frontmatter!.name!}
                     name={frontmatter!.name!}
-                    image={frontmatter!.photo!.childImageSharp!.fluid!}
+                    image={frontmatter!.portrait!.childImageSharp!.fluid!}
                     active={activeMember === frontmatter!.name!}
                 >
                     {renderMarkdown(htmlAst!)}

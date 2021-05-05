@@ -1,7 +1,7 @@
 ---
 name: "Tom"
+portrait: "tom.jpg"
 order: 2
-photo: "tom.jpg"
 ---
 Na akci mě potkáš v roli mistra sedláře: zabývám se výrobou opasků, brašen, tašvic
 a jiných kožených výrobků. Taky mě můžeš najít na střeše, na kterou tě naučím

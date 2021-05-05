@@ -1,6 +1,6 @@
 ---
 name: "Jedla"
-photo: "jedla.jpg"
+portrait: "jedla.jpg"
 order: 6
 ---
 Žiji v Brně, vystudoval jsem technickou kybernetiku. Pracují na Akademii věd kde se zabývám vývojem přesných
