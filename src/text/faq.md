@@ -140,6 +140,12 @@ Jak to bude probíhat? Na celou dobu akce máme připravené konkrétní aktivit
 diskuse, &hellip; Ty souvisí s tématem Věku železa, navazují na sebe a povedou tě k tomu, aby ses zamyslel/a nad tím,
 jak to ve svém životě máš. Zkusíš si nové činnosti, zažiješ nové situace &ndash; a třeba o sobě zjistíš něco, co jsi předtím nevěděl/a.
 
+A o čem teda Věk železa je?
+---------------------------
+Na věk železa pojedete jako osadníci. Opustíte pohodlí a bezpečí vašich starých domovů a vydáte se do pohraničí,
+do míst, kde mají šanci se prosadit ti, co něco dovedou. Dokážete zprovoznit huť a postavit se všem nástrahám,
+které mohou na okraji civilizace číhat? Najdete v sobě něco, co vám umožní uspět?
+
 Jak moc drsný středověk děláte? Jste historicky věrní?
 ------------------------------------------------------
 Středověk je pro nás spíše kulisa než hlavní zaměření. Baví nás, rádi zkoušíme historické postupy (například v řemeslech),
