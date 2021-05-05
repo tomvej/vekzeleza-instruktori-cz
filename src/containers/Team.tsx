@@ -15,7 +15,7 @@ export const Team: FC = () => {
                         name
                         portrait {
                             childImageSharp {
-                                fluid(maxWidth: 150) {
+                                fluid(maxWidth: 200) {
                                     ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
