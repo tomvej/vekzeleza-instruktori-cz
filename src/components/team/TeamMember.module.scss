@@ -1,7 +1,26 @@
+@import "../../media";
+
 .hidden {
     display: none;
+
+    @include md {
+        display: block;
+    }
 }
 
 .title {
     font-size: 1.7em;
+}
+
+.image {
+    float: left;
+
+    width: 200px;
+    max-width: 100%;
+
+    display: none;
+
+    @include md {
+        display: block;
+    }
 }
