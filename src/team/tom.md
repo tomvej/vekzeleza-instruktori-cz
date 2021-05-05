@@ -3,14 +3,11 @@ name: "Tom"
 portrait: "tom.jpg"
 order: 2
 ---
-Na akci mě potkáš v roli mistra sedláře: zabývám se výrobou opasků, brašen, tašvic
-a jiných kožených výrobků. Taky mě můžeš najít na střeše, na kterou tě naučím
-klást došky, nebo u ohně s kytarou.
+V Brně jsem vystudoval informatiku, a protože se mi tam zalíbílo, tak jsem tam zůstal. Pracuju jako programátor,
+živím se vývojem webových aplikací. Zajímám se o to, jak fungují příběhy, což jsou pro mě knížky (převážně fantasy),
+hry na hrdiny a počítačové hry. Kromě toho rád hraju na kytaru a chodím po horách. A občas po nich i lozím.
 
-Do pořádání zážitkových akcí jsem se pustil teprve nedávno, ale s o to větší vervou:
-Kromě Alchymistova učně organizuju Instruktorský kurz, který touto dobou finišuje.
-V civilním životě jsem programátor, ale snažím se, aby mě neurčovala jen má profese.
-Zajímá mě například vyprávění příběhů nebo hry s hraním rolí. Rád ale taky vyrazím
-s krosnou na pár dní někam ven.
+Na Tvrzi mě uchvátilo to, že si můžu vyrábět předměty, které používám, ať už je to oblečení nebo jiné doplňky.
+Na akci mám na starost brašnářství, tedy měšce, tašvice, opasky a podobné výrobky, doma ještě šiju a tkám na karetkách.
+Kromě toho se o vás budu starat jako zdravotník.
 
-Poznáš mě podle dost nepřeslechnutelného smíchu.

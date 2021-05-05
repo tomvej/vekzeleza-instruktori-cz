@@ -3,12 +3,13 @@ name: "Bětka"
 portrait: "betka.jpg"
 order: 5
 ---
-Kolem Tvrze se zatím vyskytuju jen krátce, mezi organizátory jsem prvním rokem. Na žádné řemeslo ani práci jsem se zatím nezaměřila,
-takže mě spíš můžeš vidět, jak se motám kolem a snažím se pomáhat, kde je zrovna potřeba. Pokud se ale zrovna někde pracuje s krumpáčem,
-tak mě dost pravděpodobně uvidíš tam, s krumpáčem mi to totiž fakt jde!
+Studuju zoologii. Jsem přesně takový ten zoolog, který sice nepozná toho divného brouka, kterého mu přineseš,
+ale zato se s tebou s radostí vrhne do debaty o tom, jestli mají kentauři dvě srdce. Mám ráda přírodu, bláznivé nápady,
+spaní venku a dobré jídlo.
 
-Ve 21. století studuju biologii a trávím spoustu času venku, kde lovím korýše cedníkem a zkoumám různé breberky. Normální jsem jenom příležitostně …
+Při pobytu v rosické vesničce mě nejvíc baví to množství možností a zajímavých podnětů: můžu si vyrobit sponu na plášť,
+postavit kus střechy, zazpívat si u ohně, zjistit, jak se ve středověku vařilo pivo, a nebo se zapojit do šílené debaty o falšování peněz.
 
-Jinak pokud by ses chystal provádět nějaké blbosti a rošťárny, tak se mnou rozhodně můžeš počítat! A kdyby sis náhodou na akci nebyl jistý,
-tak ta divná, vysmátá a trochu potrhlá holka jsem vážně já!
+Jsem odborník na práci s krumpáčem, lumpárny a trapné vtípky.
+
 

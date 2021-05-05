@@ -3,12 +3,17 @@ name: "Hanka"
 portrait: "hanicka.jpg"
 order: 5
 ---
-Na akci vystupuju v roli klíčnice, jakési hospodyně, která musí vědět o všem a ke všemu má komentář.
+Už několik let žiju ve slovinském Koperu, přístavu na břehu Jaderského moře, kde jsem po bakaláři dřevostaveb v Brně
+navázala studijním programem zaměřeným na udržitelnost a dřevo v životním prostředí člověka. Teď pracuju ve výzkumném
+centru věnujícím se stejným tématům &mdash; částečně pomáhám s výzkumem a částečně pečuju o běžný provoz institutu.
+Ve volném čase zpívám, lyžuju, hraju kuželky a střílím z luku.
 
-Na Instruktory nahlížím zvenku, Alchymistův učeň je moje první opravdu zážitková akce, i když kolem Tvrze se ochomýtám
-už pěkných pár let. Zprvu jako účastník, později org, Příkop a jeho osazenstvo mě uchvátily a nepustily.
+K Tvrzi jsem se poprvé dostala v 17 letech. Od té doby se na ní podílím, nejdřív jako účastník, později jako organizátor.
+V rámci projektu Tvrz mě baví potkávat se s ostatními, kteří jsou podobně naladěni, společně budovat, vymýšlet a zkoušet nové věci,
+hrát si; pohybovat se ve středověkém prostředí, které spoustu věcí zjednoduší a spoustu zkomplikuje. Věk železa pro mě znamená
+odpojení se od reálného světa, šanci vytvořit společně časoprostor který vtáhne účastníky i organizátory, jiné trvání času,
+partu lidí, společný humor a zpívání u ohně.
 
-V civilu momentálně žiju ve Slovinsku, chystám se zakončit studium udržitelného prostředí budov. Kromě školy se věnuju
-koordinaci univerzitního sboru a zpěvu tamtéž, lyžování, kuželkám a lukostřelbě.
+Mám ráda přehled a logicky uspořádané věci, na akci často vystupuju v roli hospodyně-klíčnice, která všechny kolem popohání
+do činnosti, ale zároveň se klidně chopí práce spolu s ostatními.
 
-Na akci mě poznáš jako toho, kdo vstává poslední.
