@@ -15,6 +15,6 @@ Sám se nejraději věnuji výrobě nožů.
 
 Častěji pořádám spíše akce zaměřené futuristický (HiTech, 2001: Vesmírná odyssea, 2010: Vesmírná odyssea).
 Moje působení na Tvrzi posazené do minulosti je zdánlivě výjimkou. Ve skutečnosti se mi na tom líbí hledání
-nestandardních řešení, buď těch nových, která tu ještě nebyla, nebo těch, na která se již zapomělo.
+nestandardních řešení, buď těch nových, která tu ještě nebyla, nebo těch, na která se již zapomnělo.
 
 Kamarádi o mně říkají, že mám rád věci optimalizované. Nevím, jestli to je urážka nebo lichotka, ale nejspíš je to pravda.

@@ -5,7 +5,7 @@ order: 5
 ---
 Už několik let žiju ve slovinském Koperu, přístavu na břehu Jaderského moře, kde jsem po bakaláři dřevostaveb v Brně
 navázala studijním programem zaměřeným na udržitelnost a dřevo v životním prostředí člověka. Teď pracuju ve výzkumném
-centru věnujícím se stejným tématům &mdash; částečně pomáhám s výzkumem a částečně pečuju o běžný provoz institutu.
+centru věnujícímu se stejným tématům &mdash; částečně pomáhám s výzkumem a částečně pečuju o běžný provoz institutu.
 Ve volném čase zpívám, lyžuju, hraju kuželky a střílím z luku.
 
 K Tvrzi jsem se poprvé dostala v 17 letech. Od té doby se na ní podílím, nejdřív jako účastník, později jako organizátor.
