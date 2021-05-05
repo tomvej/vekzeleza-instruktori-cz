@@ -12,7 +12,7 @@ interface Props {
 
 export const TeamMember: FC<Props> = ({name, children, active = false}) => (
     <div className={classNames({[style.hidden]: !active})}>
-        <h2>{name}</h2>
+        <h2 className={style.title}>{name}</h2>
         {children}
     </div>
 );
