@@ -21,7 +21,7 @@ module.exports = {
         summary: [
             {label: 'Věk', value: '17\u201325'},
             {label: 'Termín', value: '13.\u201322.\u00A08.\u00A02021'},
-            {label: 'Cena', value: '3250\u00A0Kč'},
+            {label: 'Cena', value: '3500\u00A0Kč'},
         ],
     },
     plugins: [

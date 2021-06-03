@@ -63,14 +63,13 @@ a kanady, pohorky, tmavé tenisky nebo sandály.
 
 Kolik za to zaplatím?
 ---------------------
-Čím dříve se přihlásíš, tím méně zaplatíš. Pokud akci zaplatíš do 16. 5. 2021, bude tě stát 3250 Kč.
-Později tě bude stát 3500 Kč.
+Za akci zaplatíš 3500 Kč.
 
 Z tvého účastnického poplatku ti zajistíme jídlo, ubytování, kostým a různé věci potřebné pro programy,
 kterých se budeš účastnit, například materiál pro řemeslné výrobky. Věk železa pořádáme bez nároku
 na honorář, případné přebytky půjdou do fondu údržby vesničky.
 
-Přijde ti 3250 Kč moc a zvažuješ, jestli na akci jet? [Napiš nám](#contact) a zkusíme spolu vymyslet,
+Přijde ti 3500 Kč moc a zvažuješ, jestli na akci jet? [Napiš nám](#contact) a zkusíme spolu vymyslet,
 jak pro tebe akci udělat levnější. Nabízí se například možnost přijet do vesničky na brigádu a část ceny si odpracovat.
 
 Jel/jela bych, ale nevím, jestli ...
