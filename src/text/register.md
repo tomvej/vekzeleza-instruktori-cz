@@ -7,4 +7,4 @@ Přihláška
 
 Účastníky vybíráme na základě dotazníku, může se tedy stát, že tě na akci nevezmeme, například proto, že od něj očekáváš něco, co ti nemůže dát. V takovém případě tě rádi uvidíme na jiných akcích Instruktorů Brno.
 
-Přihlašování je otevřené do **31. 7. 2021**.
+Přihlašování je otevřené do **4. 8. 2021**. Zbývá posledních pár volných míst!

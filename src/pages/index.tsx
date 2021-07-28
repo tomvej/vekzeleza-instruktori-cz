@@ -1,6 +1,6 @@
 import {FC} from 'react';
 
-import {Navbar, Background, Section} from '../components';
+import {Navbar, Background, Section, Alert, ResponsiveContainer} from '../components';
 import {Title, Footer, PageMeta, Info, Register, Epigraph, Contact, About, Faq, Team} from '../containers';
 
 import './style.scss';
@@ -27,6 +27,7 @@ const IndexPage: FC = () => (
         />
         <Section name={sections.about.to}>
             <Epigraph />
+            <ResponsiveContainer><Alert>Přihlašování uzavíráme 4. 8. 2021. Zbývá posledních pár volných míst!</Alert></ResponsiveContainer>
             <About />
         </Section>
         <Section name={sections.info.to}>
