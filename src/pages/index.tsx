@@ -27,7 +27,7 @@ const IndexPage: FC = () => (
         />
         <Section name={sections.about.to}>
             <Epigraph />
-            <ResponsiveContainer><Alert>Přihlašování uzavíráme 4. 8. 2021. Zbývá posledních pár volných míst!</Alert></ResponsiveContainer>
+            <ResponsiveContainer><Alert>Přihlašování je ukončeno. Pokud chceš jet jako náhradník, napiš nám na <a href="mailto:vekzeleza@instruktori.cz">vekzeleza@instruktori.cz</a></Alert></ResponsiveContainer>
             <About />
         </Section>
         <Section name={sections.info.to}>

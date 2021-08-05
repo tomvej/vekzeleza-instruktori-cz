@@ -20,7 +20,6 @@ export const Register: FC = () => {
         <ResponsiveContainer narrow>
             <Box>
                 {renderMarkdown(text.childMarkdownRemark!.htmlAst)}
-                <RegisterForm />
             </Box>
         </ResponsiveContainer>
     );
